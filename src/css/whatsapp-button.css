@@ -147,14 +147,14 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #ff69b4 0%, #db7093 100%);
+    background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
     color: white;
     padding: 0.7rem 1.5rem;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
     margin-top: 0.8rem;
-    box-shadow: 0 6px 15px rgba(255, 105, 180, 0.25);
+    box-shadow: 0 6px 15px rgba(255, 87, 34, 0.25);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 2px solid rgba(255, 255, 255, 0.2);
     position: relative;
@@ -176,8 +176,8 @@
 
 .cv-download-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
-    background: linear-gradient(135deg, #ff69b4 20%, #db7093 120%);
+    box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4);
+    background: linear-gradient(135deg, #FF5722 20%, #E64A19 120%);
 }
 
 .cv-download-btn:hover::before {
@@ -186,7 +186,7 @@
 
 .cv-download-btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
 }
 
 .cv-download-btn i {
@@ -204,13 +204,13 @@
 /* Animation for attention */
 @keyframes pulse-light {
     0% {
-        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.4);
+        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.4);
     }
     70% {
-        box-shadow: 0 0 0 10px rgba(255, 105, 180, 0);
+        box-shadow: 0 0 0 10px rgba(255, 87, 34, 0);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
+        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0);
     }
 }
 
@@ -257,7 +257,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 105, 180, 0.3) 0%, rgba(219, 112, 147, 0.3) 100%);
+    background: linear-gradient(135deg, rgba(48, 63, 159, 0.3) 0%, rgba(26, 35, 126, 0.3) 100%);
     z-index: -1;
     transform: translateZ(0);
 }
@@ -306,17 +306,17 @@ button:active, .nav-link:active, .role-card:active, .contact-card:active, .cv-do
 /* ===== 3. Custom Cursor ===== */
 /* Base cursor styles */
 html, body {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="%23ff69b4" stroke-width="1.5" fill="white" opacity="0.8"/></svg>') 8 8, auto;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="%23303F9F" stroke-width="1.5" fill="white" opacity="0.8"/></svg>') 8 8, auto;
 }
 
 /* Interactive element cursor */
 a, button, .nav-link, .role-card, .contact-card, .cv-download-btn, .whatsapp-button, .floating-whatsapp, .mobile-nav-item, .full-menu-link {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="%23ff69b4" stroke-width="2" fill="white" opacity="0.9"/><circle cx="12" cy="12" r="4" fill="%23ff69b4" opacity="0.9"/></svg>') 12 12, pointer;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="%23303F9F" stroke-width="2" fill="white" opacity="0.9"/><circle cx="12" cy="12" r="4" fill="%2326A69A" opacity="0.9"/></svg>') 12 12, pointer;
 }
 
 /* Text selection cursor */
 p, h1, h2, h3, h4, h5, h6, span, div {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="%23ff69b4" stroke-width="1.5" fill="white" opacity="0.8"/></svg>') 8 8, auto;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="%23303F9F" stroke-width="1.5" fill="white" opacity="0.8"/></svg>') 8 8, auto;
 }
 
 /* ===== 4. Animated Section Transitions ===== */
