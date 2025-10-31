@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #333;
+    color: #ff69b4;
     font-weight: 600;
     min-height: 80px;
 }
@@ -98,9 +98,9 @@
 }
 
 .sub-title {
-    color: #c2185b;
+    color: #ff69b4;
     margin-bottom: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     position: relative;
     display: inline-block;
 }
@@ -172,19 +172,19 @@
 }
 
 .exp-title {
-    color: #c2185b;
+    color: #ff69b4;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .exp-duration {
-    color: #e83e8c;
+    color: #ff69b4;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .exp-role {
-    color: #c2185b;
+    color: #ff69b4;
     font-weight: 600;
     margin: 0.5rem 0;
 }

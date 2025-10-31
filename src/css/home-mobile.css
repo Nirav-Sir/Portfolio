@@ -1,0 +1,315 @@
+/* Enhanced Mobile Styling for Home Tab */
+
+/* General Home Tab Adjustments */
+@media (max-width: 992px) {
+    .home-grid {
+        padding: 0.5rem;
+    }
+    
+    .profile-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .intro-container {
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+    
+    .intro-name {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+    }
+}
+
+/* Tablet Adjustments */
+@media (max-width: 768px) {
+    .home-grid {
+        padding: 0;
+    }
+    
+    .profile-card {
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(255, 105, 180, 0.15);
+        padding: 1.5rem 1rem;
+    }
+    
+    .intro-name {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Role Cards */
+    .role-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .role-card {
+        padding: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 60px;
+    }
+    
+    .role-text {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    
+    /* Institution Card */
+    .institution-card {
+        padding: 1.2rem;
+        margin: 1.2rem 0;
+    }
+    
+    .institution-info p {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+        padding-left: 1.2rem;
+    }
+    
+    /* Qualifications Card */
+    .qualifications-card {
+        padding: 1.2rem;
+        margin: 1.2rem 0;
+    }
+    
+    .qualifications p {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .qualifications p i {
+        margin-right: 0.6rem;
+        font-size: 1rem;
+        min-width: 1rem;
+        margin-top: 0.2rem;
+    }
+    
+    .qualifications p span {
+        display: inline-block;
+    }
+    
+    .qualification-degrees span {
+        line-height: 1.5;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .profile-card {
+        padding: 1.2rem 0.8rem;
+        border-radius: 12px;
+    }
+    
+    .intro-name {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    /* Role Cards */
+    .role-grid {
+        gap: 0.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .role-card {
+        padding: 0.7rem 0.5rem;
+        min-height: 55px;
+        border-radius: 10px;
+    }
+    
+    .role-text {
+        font-size: 0.9rem;
+    }
+    
+    /* Institution Card */
+    .institution-card {
+        padding: 1rem 0.8rem;
+        margin: 1rem 0;
+        border-radius: 12px;
+    }
+    
+    .institution-info p {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+        padding-left: 1rem;
+    }
+    
+    .institution-info p::before {
+        font-size: 1.2rem;
+    }
+    
+    /* Qualifications Card */
+    .qualifications-card {
+        padding: 1rem 0.8rem;
+        margin: 1rem 0;
+        border-radius: 12px;
+    }
+    
+    .qualifications p {
+        font-size: 0.95rem;
+        margin-bottom: 0.7rem;
+        line-height: 1.3;
+    }
+    
+    .qualifications p i {
+        margin-right: 0.5rem;
+        font-size: 0.95rem;
+        min-width: 0.95rem;
+    }
+    
+    .qualifications p span {
+        flex: 1;
+    }
+    
+    .qualification-degrees span {
+        word-wrap: break-word;
+    }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 400px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .intro-name {
+        font-size: 1.4rem;
+    }
+    
+    /* Role Cards */
+    .role-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .role-card {
+        padding: 0.7rem 0.5rem;
+        min-height: 50px;
+    }
+    
+    .role-text {
+        font-size: 0.9rem;
+    }
+    
+    /* Institution Card */
+    .institution-info p {
+        font-size: 0.9rem;
+        padding-left: 0.9rem;
+    }
+    
+    /* Qualifications Card */
+    .qualifications p {
+        font-size: 0.9rem;
+    }
+    
+    .qualifications p i {
+        font-size: 0.9rem;
+        min-width: 0.9rem;
+    }
+    
+    .qualification-degrees {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .qualification-degrees i {
+        margin-bottom: 0.3rem;
+    }
+    
+    .qualification-degrees span {
+        padding-left: 0.2rem;
+    }
+}
+
+/* Specific fix for long text in qualifications */
+@media (max-width: 768px) {
+    .qualifications p:first-child {
+        line-height: 1.5;
+    }
+}
+
+/* Email Styles */
+.email-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-card .contact-text {
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+}
+
+.email-label {
+    font-weight: 600;
+    color: #ff69b4;
+    margin-bottom: 0.3rem;
+}
+
+.email-address {
+    font-weight: 500;
+    color: #333;
+    word-break: break-all;
+}
+
+/* Ensure content is visible */
+@media (max-width: 992px) {
+    #home {
+        padding: 1rem;
+    }
+    
+    .content-section {
+        margin-bottom: 70px; /* Space for mobile navigation */
+        display: none; /* Hide all sections by default */
+    }
+    
+    #home.active {
+        display: block; /* Show home section if active */
+    }
+    
+    /* Email specific mobile styles */
+    .email-card {
+        padding: 1rem;
+    }
+    
+    .email-label {
+        font-size: 0.9rem;
+    }
+    
+    .email-address {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 576px) {
+    .email-card {
+        padding: 0.8rem;
+    }
+    
+    .email-label {
+        font-size: 0.85rem;
+    }
+    
+    .email-address {
+        font-size: 0.9rem;
+    }
+}

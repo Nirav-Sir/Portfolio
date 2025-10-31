@@ -1,9 +1,9 @@
 /* Enhanced Professional Header Styling */
 
 .header {
-    background: linear-gradient(135deg, #e83e8c 0%, #c2185b 100%);
-    padding: 1.5rem 0;
-    box-shadow: 0 4px 20px rgba(232, 62, 140, 0.3);
+    background: linear-gradient(135deg, #ff69b4 0%, #db7093 100%);
+    padding: 2.5rem 0;
+    box-shadow: 0 6px 25px rgba(255, 105, 180, 0.4);
     position: relative;
     overflow: hidden;
 }
@@ -15,7 +15,7 @@
     right: -50%;
     width: 100%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
     transform: rotate(30deg);
 }
 
@@ -34,19 +34,35 @@
     align-items: center;
 }
 
-.header-profile img {
-    width: 100px;
-    height: 100px;
+.profile-image-container {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    background-color: white;
+}
+
+.profile-image-container:hover {
+    transform: scale(1.08) rotate(3deg);
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.6);
+    border-color: #ffb6c1;
+    border-width: 6px;
+}
+
+.header-profile img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 3px solid white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    object-position: center 20%;
+    transition: all 0.4s ease;
 }
 
 .header-profile img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .header-title {
@@ -56,16 +72,16 @@
 .name {
     color: white;
     margin: 0;
-    font-size: 2rem;
-    font-weight: 600;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 .position {
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0.5rem 0 0;
-    font-size: 1.1rem;
-    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0.7rem 0 0;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 .header-contact {
@@ -86,25 +102,26 @@
 }
 
 .header-contact-item i {
-    width: 30px;
-    height: 30px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0.8rem;
-    font-size: 0.9rem;
+    margin-right: 1rem;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
 }
 
 .header-contact-item:hover i {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
     transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .header-contact-item span {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
 }
 
 /* Remove duplicate profile info in sidebar */

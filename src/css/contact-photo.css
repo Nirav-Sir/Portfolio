@@ -1,0 +1,62 @@
+/* Contact Photo Styling */
+
+/* Header contact avatar styling */
+.contact-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+    background-color: white;
+}
+
+.contact-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+/* Header avatar styling enhanced */
+.contact-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+    background-color: white;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.4);
+    border-color: #ffb6c1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-avatar {
+        width: 80px;
+        height: 80px;
+        border-width: 3px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-avatar {
+        width: 70px;
+        height: 70px;
+        border-width: 3px;
+    }
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+    .contact-avatar {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}

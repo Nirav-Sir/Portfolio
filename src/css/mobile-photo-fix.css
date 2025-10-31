@@ -1,0 +1,44 @@
+/* Mobile Photo Alignment Fix */
+
+/* Ensure proper alignment of profile photo in mobile view */
+@media (max-width: 576px) {
+    .profile-image-container {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+    }
+    
+    .header-profile {
+        justify-content: center;
+    }
+    
+    .header-title {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .name {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .position {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-image-container {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+    .profile-image-container {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
