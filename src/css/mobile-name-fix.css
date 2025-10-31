@@ -1,0 +1,81 @@
+/* Fix for name visibility in mobile responsive view */
+
+/* Ensure name is visible in mobile view */
+@media (max-width: 768px) {
+    /* Header name styling */
+    .name {
+        color: #FDFDFE !important; /* Off-white color for better visibility */
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important; /* Stronger shadow for better contrast */
+        font-size: 1.8rem !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.01em !important;
+        margin-bottom: 0.5rem !important;
+        background: none !important; /* Remove any gradient background */
+        -webkit-text-fill-color: #FDFDFE !important; /* Ensure text color is visible */
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0 0.5rem !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* Position title styling */
+    .position {
+        color: #FDFDFE !important; /* Off-white color */
+        font-size: 1.1rem !important;
+        font-weight: 500 !important;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important; /* Shadow for better contrast */
+        opacity: 0.95 !important; /* Slight transparency for visual hierarchy */
+        margin-top: 0.3rem !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0 0.5rem !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* Header title container */
+    .header-title {
+        padding: 0.5rem 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        display: block !important;
+    }
+    
+    /* Header background enhancement for better contrast */
+    .header {
+        background: linear-gradient(135deg, #1E1E38 0%, #2E2E48 100%) !important; /* Darker gradient */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.5rem !important;
+        padding: 0 0.3rem !important;
+        margin-bottom: 0.3rem !important;
+    }
+    
+    .position {
+        font-size: 0.9rem !important;
+        padding: 0 0.3rem !important;
+    }
+    
+    .header-title {
+        padding: 0.3rem 0 !important;
+    }
+}
+
+/* Force name visibility with !important flags */
+.name,
+.position {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
