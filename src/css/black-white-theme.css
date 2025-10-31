@@ -1,0 +1,327 @@
+/* Black and White Professional Theme */
+
+/* Core Color Variables */
+:root {
+    /* Primary Colors */
+    --primary-dark: #000000;
+    --primary-dark-hover: #333333;
+    --primary-medium: #666666;
+    --primary-light: #999999;
+    
+    /* Secondary Colors */
+    --secondary-dark: #222222;
+    --secondary-medium: #555555;
+    --secondary-light: #888888;
+    
+    /* Background Colors */
+    --bg-white: #ffffff;
+    --bg-light: #f5f5f5;
+    --bg-medium: #e0e0e0;
+    --bg-dark: #cccccc;
+    
+    /* Text Colors */
+    --text-dark: #000000;
+    --text-medium: #444444;
+    --text-light: #777777;
+    --text-white: #ffffff;
+    
+    /* Accent Colors (minimal use) */
+    --accent-dark: #111111;
+    --accent-medium: #555555;
+    --accent-light: #aaaaaa;
+    
+    /* Shadow Colors */
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    
+    /* Override any existing color variables */
+    --primary-blue: #000000;
+    --primary-blue-light: #333333;
+    --primary-blue-dark: #000000;
+    --accent-teal: #444444;
+    --accent-teal-light: #666666;
+    --accent-teal-dark: #222222;
+    --accent-orange: #555555;
+    --accent-orange-light: #777777;
+    --accent-orange-dark: #333333;
+    --primary-pink: #000000;
+    --primary-pink-light: #333333;
+    --primary-pink-dark: #000000;
+}
+
+/* Body and General Styles */
+body {
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%) !important;
+    box-shadow: 0 4px 15px var(--shadow-dark) !important;
+}
+
+.name, .position {
+    color: var(--text-white) !important;
+}
+
+/* Navigation Styling */
+.nav-menu {
+    background: var(--bg-white) !important;
+    box-shadow: 0 5px 20px var(--shadow-medium) !important;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    transition: all 0.3s ease !important;
+}
+
+.nav-link:hover {
+    background: var(--bg-light) !important;
+    color: var(--primary-dark) !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.nav-link.active {
+    background: var(--bg-medium) !important;
+    color: var(--primary-dark) !important;
+    border-left: 4px solid var(--primary-dark) !important;
+}
+
+.nav-link i {
+    color: var(--primary-dark) !important;
+}
+
+/* Section Styling */
+.section-title {
+    color: var(--primary-dark) !important;
+    border-bottom: 2px solid var(--primary-dark) !important;
+}
+
+.content-section {
+    background: var(--bg-white) !important;
+    box-shadow: 0 5px 20px var(--shadow-light) !important;
+}
+
+/* Cards Styling */
+.role-card, 
+.contact-card, 
+.institution-card, 
+.qualifications-card, 
+.education-item, 
+.research-card, 
+.achievement-card, 
+.award-card, 
+.profile-card,
+.skill-card,
+.experience-card,
+.reviewer-card,
+.book-card,
+.certificate-card {
+    background: var(--bg-white) !important;
+    border: 1px solid var(--bg-medium) !important;
+    box-shadow: 0 10px 25px var(--shadow-light) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Card Hover Effects */
+.role-card:hover, 
+.contact-card:hover, 
+.institution-card:hover, 
+.qualifications-card:hover, 
+.education-item:hover, 
+.research-card:hover, 
+.achievement-card:hover, 
+.award-card:hover, 
+.profile-card:hover,
+.skill-card:hover,
+.experience-card:hover,
+.reviewer-card:hover,
+.book-card:hover,
+.certificate-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px var(--shadow-medium) !important;
+    border-color: var(--primary-medium) !important;
+}
+
+/* Card Before Elements */
+.role-card::before, 
+.contact-card::before, 
+.institution-card::before, 
+.qualifications-card::before, 
+.education-item::before, 
+.research-card::before, 
+.achievement-card::before, 
+.award-card::before, 
+.profile-card::before,
+.experience-card::before,
+.reviewer-card::before {
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-medium)) !important;
+}
+
+/* Text Elements */
+.role-text,
+.contact-text,
+.email-label,
+.institution-info p,
+.qualifications p,
+.education-degree,
+.research-title,
+.achievement-title,
+.award-title,
+.exp-title,
+.exp-role,
+.reviewer-title,
+.book-title {
+    color: var(--primary-dark) !important;
+}
+
+.education-school,
+.exp-duration,
+.research-meta,
+.achievement-meta,
+.award-meta,
+.reviewer-meta,
+.book-meta {
+    color: var(--primary-medium) !important;
+}
+
+/* Button Styling */
+.cv-download-btn {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%) !important;
+    color: var(--text-white) !important;
+    box-shadow: 0 4px 10px var(--shadow-medium) !important;
+}
+
+.cv-download-btn:hover {
+    box-shadow: 0 6px 15px var(--shadow-dark) !important;
+}
+
+/* Icons */
+.contact-icon,
+.achievement-icon,
+.award-icon,
+.book-icon,
+.certificate-icon,
+.reviewer-number {
+    background: var(--bg-light) !important;
+    color: var(--primary-dark) !important;
+}
+
+/* Featured Badges */
+.featured-badge {
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-medium)) !important;
+    color: var(--text-white) !important;
+}
+
+.featured-mini {
+    background: var(--bg-medium) !important;
+    color: var(--primary-dark) !important;
+}
+
+/* About Me Section */
+.about-me-section {
+    background: var(--bg-white) !important;
+    box-shadow: 0 15px 30px var(--shadow-light) !important;
+}
+
+.about-me-title {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%) !important;
+    color: var(--text-white) !important;
+}
+
+.about-me-content p {
+    color: var(--text-medium) !important;
+}
+
+/* WhatsApp Button */
+.whatsapp-button,
+.floating-whatsapp {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+    color: var(--text-white) !important;
+    box-shadow: 0 4px 10px var(--shadow-medium) !important;
+}
+
+.whatsapp-button:hover,
+.floating-whatsapp:hover {
+    background-color: var(--primary-dark-hover) !important;
+    box-shadow: 0 6px 15px var(--shadow-dark) !important;
+}
+
+/* Visitor Counter */
+.visitor-counter {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%) !important;
+    color: var(--text-white) !important;
+    box-shadow: 0 4px 10px var(--shadow-medium) !important;
+}
+
+.visitor-counter:hover {
+    box-shadow: 0 6px 15px var(--shadow-dark) !important;
+}
+
+/* Mobile Navigation */
+.mobile-nav-container {
+    background: var(--bg-white) !important;
+    box-shadow: 0 -5px 15px var(--shadow-light) !important;
+    border-top: 2px solid var(--bg-medium) !important;
+}
+
+.mobile-nav-item {
+    color: var(--text-dark) !important;
+}
+
+.mobile-nav-item.active {
+    color: var(--primary-dark) !important;
+}
+
+.mobile-nav-item i {
+    color: var(--primary-dark) !important;
+}
+
+/* Full Menu */
+.full-menu {
+    background: var(--bg-white) !important;
+}
+
+.full-menu-title {
+    color: var(--primary-dark) !important;
+}
+
+.full-menu-link {
+    color: var(--text-dark) !important;
+}
+
+.full-menu-link.active,
+.full-menu-link:hover {
+    color: var(--primary-dark) !important;
+    background: var(--bg-light) !important;
+}
+
+/* Remove all animation effects that might distract */
+.role-card::after, 
+.contact-card::after, 
+.institution-card::after, 
+.qualifications-card::after, 
+.education-item::after, 
+.research-card::after, 
+.achievement-card::after, 
+.award-card::after, 
+.profile-card::after,
+.skill-card::after,
+.experience-card::after {
+    display: none !important;
+}
+
+/* Cursor style */
+a, button, .nav-link, .role-card, .contact-card, .cv-download-btn, 
+.whatsapp-button, .floating-whatsapp, .mobile-nav-item, .full-menu-link {
+    cursor: pointer !important;
+}
+
+/* Ensure all transitions are subtle and professional */
+* {
+    transition: all 0.3s ease !important;
+}
