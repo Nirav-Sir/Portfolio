@@ -1,0 +1,70 @@
+/* Fix for scrollbar appearing on card hover */
+
+/* Prevent scrollbar from appearing on hover */
+html {
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Ensure card transformations don't cause overflow */
+.role-card,
+.contact-card,
+.institution-card,
+.qualifications-card,
+.education-item,
+.research-card,
+.achievement-card,
+.award-card,
+.profile-card,
+.skill-card,
+.experience-card {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
+}
+
+/* Override hover transformations to prevent scrollbar */
+.role-card:hover,
+.contact-card:hover,
+.institution-card:hover,
+.qualifications-card:hover,
+.education-item:hover,
+.research-card:hover,
+.achievement-card:hover,
+.award-card:hover,
+.profile-card:hover,
+.skill-card:hover,
+.experience-card:hover {
+    transform: translateY(-10px) translateZ(0);
+}
+
+/* Special case for skill cards with rotateX */
+.skill-card:hover {
+    transform: translateY(-10px) translateZ(0);
+}
+
+/* Ensure content stays within its container */
+.content-section {
+    overflow: hidden;
+}
+
+/* Fix for mobile devices */
+@media (max-width: 768px) {
+    .role-card:hover,
+    .contact-card:hover,
+    .institution-card:hover,
+    .qualifications-card:hover,
+    .education-item:hover,
+    .research-card:hover,
+    .achievement-card:hover,
+    .award-card:hover,
+    .profile-card:hover,
+    .skill-card:hover,
+    .experience-card:hover {
+        transform: translateY(-5px) translateZ(0);
+    }
+}

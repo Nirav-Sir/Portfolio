@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="css/mobile-photo-fix.css">
     <link rel="stylesheet" href="css/contact-photo.css">
     <link rel="stylesheet" href="css/whatsapp-button.css">
+    <link rel="stylesheet" href="css/visitor-counter.css">
+    <link rel="stylesheet" href="css/fix-scrollbar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -115,6 +117,9 @@
                 <div class="profile-card">
                     <div class="intro-container">
                         <h1 class="intro-name">Dr. Nirav Pareshkumar Mehta</h1>
+                        <div class="visitor-counter">
+                            <i class="fas fa-eye"></i> Visitors: <span id="visitor-count" class="visitor-count">0</span>
+                        </div>
                     </div>
                     
                     <div class="role-grid">
@@ -1413,7 +1418,8 @@
         }
     });
     </script>
-    <script src="js/achievements.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/visitor-counter.js"></script>
     
     <script>
     /**
