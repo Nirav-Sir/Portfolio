@@ -1,0 +1,204 @@
+/* Home Page Enhancements - Blue Theme */
+
+/* Dr. Nirav's Name Styling */
+.intro-name {
+    background: linear-gradient(135deg, #0A2463 0%, #1A3A7F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 10px rgba(10, 36, 99, 0.2);
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    position: relative;
+    display: inline-block;
+}
+
+.intro-name::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #7C3AED, transparent);
+    transition: width 0.4s ease;
+}
+
+.intro-name:hover::after {
+    width: 100%;
+}
+
+/* Enhanced Email Card */
+.email-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(10, 36, 99, 0.12);
+    border: 1px solid rgba(10, 36, 99, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.email-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FFD700, #CCAC00);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.email-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(10, 36, 99, 0.18);
+}
+
+.email-card:hover::before {
+    transform: scaleX(1);
+}
+
+.email-label {
+    color: #0A2463;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+.email-address {
+    color: #333333;
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+    word-break: break-all;
+}
+
+/* Professional Glossy Menu Hover Effects */
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-left: 4px solid transparent;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(124, 58, 237, 0.2), transparent);
+    transition: left 0.7s ease;
+    z-index: -1;
+}
+
+.nav-link:hover {
+    background: linear-gradient(90deg, rgba(10, 36, 99, 0.05) 0%, rgba(10, 36, 99, 0.02) 100%);
+    color: #0A2463;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(10, 36, 99, 0.1);
+}
+
+.nav-link:hover::before {
+    left: 100%;
+}
+
+.nav-link:hover i {
+    transform: scale(1.2) rotate(5deg);
+    color: #FFD700;
+}
+
+.nav-link.active {
+    background: linear-gradient(90deg, rgba(10, 36, 99, 0.1) 0%, rgba(10, 36, 99, 0.05) 100%);
+    color: #0A2463;
+    border-left: 4px solid #FFD700;
+    font-weight: 600;
+}
+
+.nav-link.active i {
+    color: #FFD700;
+}
+
+/* Combined Email Card */
+.combined-email-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(10, 36, 99, 0.12);
+    border: 1px solid rgba(10, 36, 99, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.combined-email-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FFD700, #CCAC00);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.combined-email-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(10, 36, 99, 0.18);
+}
+
+.combined-email-card:hover::before {
+    transform: scaleX(1);
+}
+
+.combined-email-card .card-title {
+    color: #0A2463;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(10, 36, 99, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.email-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.email-item:last-child {
+    margin-bottom: 0;
+}
+
+.email-icon {
+    color: #7C3AED;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+    background: rgba(124, 58, 237, 0.1);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.email-item:hover .email-icon {
+    transform: scale(1.2) rotate(15deg);
+    background: rgba(124, 58, 237, 0.2);
+}

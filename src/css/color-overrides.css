@@ -1,0 +1,208 @@
+/* Color Overrides - Force application of the Indigo, Violet, Pink theme */
+
+/* Force override any remaining pink or blue colors */
+[style*="color:#ff69b4"],
+[style*="color:#db7093"],
+[style*="color:#e83e8c"],
+[style*="color:#c2185b"],
+[style*="color:#303F9F"],
+[style*="color:#1A237E"],
+[style*="color:#26A69A"] {
+    color: #2E2E48 !important;
+}
+
+/* Force background colors */
+[style*="background:#ff69b4"],
+[style*="background:#db7093"],
+[style*="background:#e83e8c"],
+[style*="background:#c2185b"],
+[style*="background:#303F9F"],
+[style*="background:#1A237E"],
+[style*="background:#26A69A"] {
+    background: #7C3AED !important;
+}
+
+/* Force border colors */
+[style*="border-color:#ff69b4"],
+[style*="border-color:#db7093"],
+[style*="border-color:#e83e8c"],
+[style*="border-color:#c2185b"],
+[style*="border-color:#303F9F"],
+[style*="border-color:#1A237E"],
+[style*="border-color:#26A69A"] {
+    border-color: #7C3AED !important;
+}
+
+/* Override specific elements */
+.intro-name {
+    background: linear-gradient(135deg, #2E2E48 0%, #7C3AED 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.role-text {
+    color: #2E2E48 !important;
+}
+
+.role-card:hover .role-text {
+    color: #7C3AED !important;
+}
+
+.contact-icon, .email-icon {
+    color: #7C3AED !important;
+    background: rgba(124, 58, 237, 0.1) !important;
+}
+
+.contact-icon i, .email-icon i {
+    color: #7C3AED !important;
+}
+
+.contact-text, .email-address {
+    color: #374151 !important;
+}
+
+.email-label, .contact-label {
+    color: #7C3AED !important;
+}
+
+.card-title {
+    color: #2E2E48 !important;
+}
+
+/* Header elements */
+.header {
+    background: linear-gradient(135deg, #2E2E48 0%, #1E1E38 100%) !important;
+}
+
+/* Navigation */
+.nav-link i {
+    color: #7C3AED !important;
+}
+
+.nav-link.active {
+    border-left: 4px solid #7C3AED !important;
+}
+
+.nav-link:hover i {
+    color: #8C4AFD !important;
+}
+
+/* Section titles */
+.section-title {
+    color: #2E2E48 !important;
+    border-bottom: 2px solid #7C3AED !important;
+}
+
+/* Buttons */
+.cv-download-btn, .whatsapp-button {
+    background: linear-gradient(135deg, #7C3AED 0%, #6C2ADD 100%) !important;
+    color: white !important;
+}
+
+/* Profile image */
+.profile-image-container {
+    border-color: #7C3AED !important;
+}
+
+.profile-image-container:hover {
+    border-color: #8C4AFD !important;
+}
+
+/* Background colors */
+body, .content-section {
+    background-color: #FDFDFE !important;
+}
+
+/* Fix any remaining text colors */
+p, .exp-meta, .exp-body {
+    color: #374151 !important;
+}
+
+/* Fix any remaining card elements */
+.role-card::before, 
+.contact-card::before, 
+.institution-card::before, 
+.qualifications-card::before, 
+.education-item::before, 
+.research-card::before, 
+.achievement-card::before, 
+.award-card::before, 
+.profile-card::before,
+.experience-card::before,
+.reviewer-card::before,
+.combined-email-card::before {
+    background: linear-gradient(90deg, #7C3AED, #6C2ADD) !important;
+}
+
+/* Fix experience cards */
+.exp-title {
+    color: #2E2E48 !important;
+}
+
+.exp-duration {
+    color: #7C3AED !important;
+}
+
+.exp-role {
+    color: #2E2E48 !important;
+}
+
+/* Fix skill cards */
+.skill-card {
+    color: #2E2E48 !important;
+}
+
+.skill-card.highlight {
+    color: #2E2E48 !important;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, #FDFDFE 100%) !important;
+}
+
+.sub-title {
+    color: #2E2E48 !important;
+}
+
+.sub-title::after {
+    background: linear-gradient(90deg, #7C3AED, transparent) !important;
+}
+
+/* Fix education items */
+.education-degree {
+    color: #2E2E48 !important;
+}
+
+.education-school {
+    color: #374151 !important;
+}
+
+.education-degree::after {
+    background: linear-gradient(90deg, #7C3AED, transparent) !important;
+}
+
+/* Fix research items */
+.research-title {
+    color: #2E2E48 !important;
+}
+
+.research-meta strong {
+    color: #7C3AED !important;
+}
+
+/* Fix mobile navigation */
+.mobile-nav-item.active {
+    color: #7C3AED !important;
+}
+
+.mobile-nav-item::after {
+    background: #7C3AED !important;
+}
+
+/* Fix featured badges */
+.featured-badge {
+    background: linear-gradient(90deg, #7C3AED, #3E3E58) !important;
+}
+
+.featured-mini {
+    background: rgba(124, 58, 237, 0.15) !important;
+    color: #7C3AED !important;
+}

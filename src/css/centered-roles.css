@@ -1,0 +1,88 @@
+/* Center-aligned Role Cards */
+
+/* Center the role grid */
+.role-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    margin: 1.5rem auto !important;
+    max-width: 500px !important;
+}
+
+/* Style each role card */
+.role-card {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 1rem !important;
+    border-radius: 10px !important;
+    background: var(--bg-white) !important;
+    box-shadow: 0 8px 20px rgba(46, 46, 72, 0.12) !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Role text styling */
+.role-text {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: #2E2E48 !important;
+    display: block !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* Hover effects */
+.role-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 12px 25px rgba(46, 46, 72, 0.2) !important;
+}
+
+.role-card:hover .role-text {
+    color: #7C3AED !important;
+}
+
+/* Top border effect */
+.role-card::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 4px !important;
+    background: linear-gradient(90deg, #7C3AED, #6C2ADD) !important;
+    transform: scaleX(0) !important;
+    transform-origin: left !important;
+    transition: transform 0.4s ease !important;
+    z-index: 2 !important;
+}
+
+.role-card:hover::before {
+    transform: scaleX(1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .role-grid {
+        max-width: 400px !important;
+    }
+    
+    .role-text {
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .role-grid {
+        max-width: 300px !important;
+    }
+    
+    .role-card {
+        padding: 0.8rem !important;
+    }
+    
+    .role-text {
+        font-size: 1rem !important;
+    }
+}

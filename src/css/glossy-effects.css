@@ -1,0 +1,277 @@
+/* Glossy Effects and Blue Header Enhancements */
+
+/* Blue heading in header section */
+.name {
+    background: linear-gradient(135deg, #2E2E48 0%, #7C3AED 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 10px rgba(46, 46, 72, 0.3);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    position: relative;
+}
+
+.position {
+    color: #FDFDFE;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(46, 46, 72, 0.3);
+}
+
+/* Glossy hover effects for cards */
+.role-card,
+.contact-card,
+.institution-card,
+.qualifications-card,
+.education-item,
+.research-card,
+.achievement-card,
+.award-card,
+.profile-card,
+.skill-card,
+.experience-card,
+.reviewer-card,
+.book-card,
+.certificate-card,
+.combined-email-card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glossy overlay effect */
+.role-card::after,
+.contact-card::after,
+.institution-card::after,
+.qualifications-card::after,
+.education-item::after,
+.research-card::after,
+.achievement-card::after,
+.award-card::after,
+.profile-card::after,
+.skill-card::after,
+.experience-card::after,
+.reviewer-card::after,
+.book-card::after,
+.certificate-card::after,
+.combined-email-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 25%, 
+        rgba(255, 255, 255, 0.2) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    transition: all 0.75s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Animate glossy effect on hover */
+.role-card:hover::after,
+.contact-card:hover::after,
+.institution-card:hover::after,
+.qualifications-card:hover::after,
+.education-item:hover::after,
+.research-card:hover::after,
+.achievement-card:hover::after,
+.award-card:hover::after,
+.profile-card:hover::after,
+.skill-card:hover::after,
+.experience-card:hover::after,
+.reviewer-card:hover::after,
+.book-card:hover::after,
+.certificate-card:hover::after,
+.combined-email-card:hover::after {
+    left: 100%;
+}
+
+/* Smooth hover transitions */
+.role-card,
+.contact-card,
+.institution-card,
+.qualifications-card,
+.education-item,
+.research-card,
+.achievement-card,
+.award-card,
+.profile-card,
+.skill-card,
+.experience-card,
+.reviewer-card,
+.book-card,
+.certificate-card,
+.combined-email-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+/* Enhanced hover effects */
+.role-card:hover,
+.contact-card:hover,
+.institution-card:hover,
+.qualifications-card:hover,
+.education-item:hover,
+.research-card:hover,
+.achievement-card:hover,
+.award-card:hover,
+.profile-card:hover,
+.skill-card:hover,
+.experience-card:hover,
+.reviewer-card:hover,
+.book-card:hover,
+.certificate-card:hover,
+.combined-email-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px rgba(46, 46, 72, 0.2) !important;
+}
+
+/* Glossy navigation hover effects */
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 25%, 
+        rgba(255, 255, 255, 0.1) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    transition: all 0.5s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.nav-link:hover::after {
+    left: 100%;
+}
+
+/* Smooth button hover effects */
+.cv-download-btn,
+.whatsapp-button,
+.floating-whatsapp,
+.mobile-menu-toggle,
+button {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.cv-download-btn::after,
+.whatsapp-button::after,
+.floating-whatsapp::after,
+.mobile-menu-toggle::after,
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 25%, 
+        rgba(255, 255, 255, 0.2) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    transition: all 0.5s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.cv-download-btn:hover::after,
+.whatsapp-button:hover::after,
+.floating-whatsapp:hover::after,
+.mobile-menu-toggle:hover::after,
+button:hover::after {
+    left: 100%;
+}
+
+.cv-download-btn:hover,
+.whatsapp-button:hover,
+.floating-whatsapp:hover,
+button:hover {
+    transform: translateY(-3px) !important;
+}
+
+/* Additional header enhancements */
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(30deg);
+    pointer-events: none;
+}
+
+/* Smooth image hover effects */
+.profile-image-container {
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -200%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        225deg, 
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    transition: all 0.75s ease;
+    pointer-events: none;
+}
+
+.profile-image-container:hover::after {
+    left: 100%;
+}
+
+/* Ensure text remains readable */
+.role-text,
+.contact-text,
+.institution-info p,
+.qualifications p,
+.education-degree,
+.research-title,
+.achievement-title,
+.award-title,
+.exp-title,
+.exp-role,
+.reviewer-title,
+.book-title,
+.card-title {
+    position: relative;
+    z-index: 2;
+}

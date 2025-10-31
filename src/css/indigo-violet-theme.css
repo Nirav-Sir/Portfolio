@@ -1,0 +1,407 @@
+/* Indigo Charcoal, Violet, and Pink Theme */
+
+/* Color Variables */
+:root {
+    /* Primary Colors */
+    --primary-indigo: #2E2E48;
+    --primary-indigo-light: #3E3E58;
+    --primary-indigo-dark: #1E1E38;
+    
+    /* Background Colors */
+    --bg-white: #FDFDFE;
+    --bg-light: #F9F9FB;
+    --bg-medium: #F0F0F5;
+    
+    /* Accent Colors */
+    --accent-violet: #7C3AED;
+    --accent-violet-light: #8C4AFD;
+    --accent-violet-dark: #6C2ADD;
+    
+    /* Secondary Accent Colors */
+    --secondary-accent: #3E3E58;
+    --secondary-accent-light: #4E4E68;
+    --secondary-accent-dark: #2E2E48;
+    
+    /* Text Colors */
+    --text-dark: #374151;
+    --text-medium: #6B7280;
+    --text-light: #9CA3AF;
+    --text-white: #FFFFFF;
+    
+    /* Shadow Colors */
+    --shadow-dark: rgba(46, 46, 72, 0.3);
+    --shadow-medium: rgba(46, 46, 72, 0.2);
+    --shadow-light: rgba(46, 46, 72, 0.1);
+    --shadow-violet: rgba(124, 58, 237, 0.2);
+}
+
+/* Body and General Styles */
+body {
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, var(--primary-indigo) 0%, var(--primary-indigo-dark) 100%);
+    box-shadow: 0 4px 15px var(--shadow-dark);
+}
+
+.name, .position {
+    color: var(--text-white);
+}
+
+/* CV Download Button */
+.cv-download-btn {
+    background: linear-gradient(135deg, var(--accent-violet) 0%, var(--accent-violet-dark) 100%);
+    color: var(--text-white);
+    box-shadow: 0 4px 10px var(--shadow-violet);
+    font-weight: 600;
+}
+
+.cv-download-btn:hover {
+    background: linear-gradient(135deg, var(--accent-violet-light) 0%, var(--accent-violet) 100%);
+    box-shadow: 0 6px 15px var(--shadow-violet);
+    transform: translateY(-2px);
+}
+
+/* Navigation Styling */
+.nav-menu {
+    background: var(--bg-white);
+    box-shadow: 0 5px 20px var(--shadow-medium);
+}
+
+.nav-link {
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(124, 58, 237, 0.1), transparent);
+    transition: left 0.7s ease;
+    z-index: -1;
+}
+
+.nav-link:hover {
+    background: var(--bg-light);
+    color: var(--accent-violet);
+    transform: translateX(5px);
+}
+
+.nav-link:hover::before {
+    left: 100%;
+}
+
+.nav-link.active {
+    background: rgba(124, 58, 237, 0.1);
+    color: var(--accent-violet);
+    border-left: 4px solid var(--accent-violet);
+}
+
+.nav-link i {
+    color: var(--accent-violet);
+}
+
+.nav-link:hover i {
+    transform: scale(1.2) rotate(5deg);
+    color: var(--accent-violet-light);
+}
+
+/* Section Styling */
+.section-title {
+    color: var(--primary-indigo);
+    border-bottom: 2px solid var(--accent-violet);
+}
+
+.content-section {
+    background: var(--bg-white);
+    box-shadow: 0 5px 20px var(--shadow-light);
+}
+
+/* Cards Styling */
+.role-card, 
+.contact-card, 
+.institution-card, 
+.qualifications-card, 
+.education-item, 
+.research-card, 
+.achievement-card, 
+.award-card, 
+.profile-card,
+.skill-card,
+.experience-card,
+.reviewer-card,
+.book-card,
+.certificate-card,
+.combined-email-card {
+    background: var(--bg-white);
+    border: 1px solid var(--bg-medium);
+    box-shadow: 0 10px 25px var(--shadow-light);
+    transition: all 0.3s ease;
+}
+
+/* Card Hover Effects */
+.role-card:hover, 
+.contact-card:hover, 
+.institution-card:hover, 
+.qualifications-card:hover, 
+.education-item:hover, 
+.research-card:hover, 
+.achievement-card:hover, 
+.award-card:hover, 
+.profile-card:hover,
+.skill-card:hover,
+.experience-card:hover,
+.reviewer-card:hover,
+.book-card:hover,
+.certificate-card:hover,
+.combined-email-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px var(--shadow-medium);
+    border-color: var(--accent-violet-light);
+}
+
+/* Card Before Elements */
+.role-card::before, 
+.contact-card::before, 
+.institution-card::before, 
+.qualifications-card::before, 
+.education-item::before, 
+.research-card::before, 
+.achievement-card::before, 
+.award-card::before, 
+.profile-card::before,
+.experience-card::before,
+.reviewer-card::before,
+.combined-email-card::before {
+    background: linear-gradient(90deg, var(--accent-violet), var(--accent-violet-dark));
+}
+
+/* Text Elements */
+.role-text,
+.institution-info p,
+.qualifications p,
+.education-degree,
+.research-title,
+.achievement-title,
+.award-title,
+.exp-title,
+.exp-role,
+.reviewer-title,
+.book-title,
+.card-title {
+    color: var(--primary-indigo);
+}
+
+.education-school,
+.exp-duration,
+.research-meta,
+.achievement-meta,
+.award-meta,
+.reviewer-meta,
+.book-meta {
+    color: var(--text-medium);
+}
+
+/* Contact Icons */
+.contact-icon,
+.achievement-icon,
+.award-icon,
+.book-icon,
+.certificate-icon,
+.reviewer-number,
+.email-icon {
+    background: rgba(124, 58, 237, 0.1);
+    color: var(--accent-violet);
+}
+
+.contact-label,
+.email-label {
+    color: var(--accent-violet);
+}
+
+.contact-value,
+.email-address {
+    color: var(--text-dark);
+}
+
+.contact-text {
+    color: var(--text-dark);
+}
+
+/* Featured Badges */
+.featured-badge {
+    background: linear-gradient(90deg, var(--accent-violet), var(--accent-violet-dark));
+    color: var(--text-white);
+}
+
+.featured-mini {
+    background: rgba(124, 58, 237, 0.15);
+    color: var(--accent-violet);
+}
+
+/* About Me Section */
+.about-me-section {
+    background: var(--bg-white);
+    box-shadow: 0 15px 30px var(--shadow-light);
+}
+
+.about-me-title {
+    background: linear-gradient(135deg, var(--primary-indigo) 0%, var(--primary-indigo-dark) 100%);
+    color: var(--text-white);
+}
+
+.about-me-content p {
+    color: var(--text-medium);
+}
+
+/* WhatsApp Button */
+.whatsapp-button,
+.floating-whatsapp {
+    background-color: var(--accent-violet);
+    border-color: var(--accent-violet);
+    color: var(--text-white);
+    box-shadow: 0 4px 10px var(--shadow-violet);
+}
+
+.whatsapp-button:hover,
+.floating-whatsapp:hover {
+    background-color: var(--accent-violet-light);
+    box-shadow: 0 6px 15px var(--shadow-violet);
+    transform: translateY(-2px);
+}
+
+/* Mobile Navigation */
+.mobile-nav-container {
+    background: var(--bg-white);
+    box-shadow: 0 -5px 15px var(--shadow-light);
+    border-top: 2px solid rgba(124, 58, 237, 0.2);
+}
+
+.mobile-nav-item {
+    color: var(--text-dark);
+}
+
+.mobile-nav-item.active {
+    color: var(--accent-violet);
+}
+
+.mobile-nav-item i {
+    color: var(--accent-violet);
+}
+
+.mobile-nav-item::after {
+    background: var(--accent-violet);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    background: var(--accent-violet);
+    box-shadow: 0 4px 15px var(--shadow-violet);
+}
+
+.mobile-menu-toggle:hover {
+    background: var(--accent-violet-light);
+}
+
+/* Full Menu */
+.full-menu {
+    background: var(--bg-white);
+}
+
+.full-menu-title {
+    color: var(--primary-indigo);
+}
+
+.full-menu-link {
+    color: var(--text-dark);
+    box-shadow: 0 4px 10px var(--shadow-light);
+    border: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+.full-menu-link i {
+    color: var(--accent-violet);
+}
+
+.full-menu-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px var(--shadow-medium);
+    background: rgba(124, 58, 237, 0.05);
+    color: var(--accent-violet);
+}
+
+.full-menu-link.active {
+    background: rgba(124, 58, 237, 0.1);
+    border-color: rgba(124, 58, 237, 0.2);
+    color: var(--accent-violet);
+}
+
+/* Skill Cards */
+.skill-card.highlight {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, var(--bg-white) 100%);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.skill-card::before {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(124, 58, 237, 0.1) 100%);
+}
+
+.skill-card::after {
+    background: linear-gradient(135deg, transparent, rgba(124, 58, 237, 0.1));
+}
+
+/* Experience Cards */
+.experience-card.highlight {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, var(--bg-white) 100%);
+    border: 1px solid rgba(124, 58, 237, 0.15);
+}
+
+.experience-card::before {
+    background: linear-gradient(to bottom, var(--accent-violet), var(--accent-violet-dark));
+}
+
+.experience-summary {
+    background: rgba(124, 58, 237, 0.05);
+}
+
+/* Profile Image */
+.profile-image-container {
+    border: 4px solid var(--accent-violet);
+    box-shadow: 0 5px 15px var(--shadow-violet);
+}
+
+.profile-image-container:hover {
+    box-shadow: 0 12px 30px var(--shadow-violet);
+    border-color: var(--accent-violet-light);
+}
+
+/* Intro Name */
+.intro-name {
+    background: linear-gradient(135deg, var(--primary-indigo) 0%, var(--accent-violet) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 10px rgba(46, 46, 72, 0.2);
+}
+
+.intro-name::after {
+    background: linear-gradient(90deg, var(--accent-violet), transparent);
+}
+
+/* Cursor style */
+html, body {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="%232E2E48" stroke-width="1.5" fill="white" opacity="0.8"/></svg>') 8 8, auto;
+}
+
+a, button, .nav-link, .role-card, .contact-card, .cv-download-btn, 
+.whatsapp-button, .floating-whatsapp, .mobile-nav-item, .full-menu-link {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="%232E2E48" stroke-width="2" fill="white" opacity="0.9"/><circle cx="12" cy="12" r="4" fill="%237C3AED" opacity="0.9"/></svg>') 12 12, pointer;
+}

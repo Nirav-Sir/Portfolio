@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#ff69b4">
+    <meta name="theme-color" content="#2E2E48"> <!-- Indigo Charcoal -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Dr. Nirav - Portfolio</title>
@@ -28,13 +28,16 @@
     <link rel="stylesheet" href="css/mobile-photo-fix.css">
     <link rel="stylesheet" href="css/contact-photo.css">
     <link rel="stylesheet" href="css/whatsapp-button.css">
-    <link rel="stylesheet" href="css/visitor-counter.css">
-    <link rel="stylesheet" href="css/fix-scrollbar.css">
-    <link rel="stylesheet" href="css/email-layout.css">
-    <!-- Black and White Theme (overrides all other themes) -->
-    <link rel="stylesheet" href="css/black-white-theme.css">
-    <!-- Professional fixes and enhancements -->
-    <link rel="stylesheet" href="css/professional-fixes.css">
+    <!-- Indigo Charcoal, Violet, and Pink Theme (overrides previous styles) -->
+    <link rel="stylesheet" href="css/indigo-violet-theme.css">
+    <!-- Force color overrides for any remaining elements -->
+    <link rel="stylesheet" href="css/color-overrides.css">
+    <!-- Override any remaining pink colors -->
+    <link rel="stylesheet" href="css/pink-override.css">
+    <!-- Glossy effects and blue header -->
+    <link rel="stylesheet" href="css/glossy-effects.css">
+    <!-- Fix for header name visibility -->
+    <link rel="stylesheet" href="css/header-name-fix.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -122,9 +125,6 @@
                 <div class="profile-card">
                     <div class="intro-container">
                         <h1 class="intro-name">Dr. Nirav Pareshkumar Mehta</h1>
-                        <div class="visitor-counter">
-                            <i class="fas fa-eye"></i> Visitors: <span id="visitor-count" class="visitor-count">0</span>
-                        </div>
                     </div>
                     
                     <div class="role-grid">
@@ -165,8 +165,7 @@
                     </div>
 
                     <div class="contact-grid">
-                        <!-- Phone number centered at top -->
-                        <div class="contact-card phone-card" style="grid-column: 1 / -1; max-width: 300px; margin: 0 auto;">
+                        <div class="contact-card">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
@@ -174,25 +173,25 @@
                                 Contact No.: 09067262552
                             </div>
                         </div>
-                        
-                        <!-- Separate email cards -->
-                        <div class="contact-card email-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
+                        <div class="combined-email-card">
+                            <div class="card-title">Email Addresses</div>
+                            <div class="email-item">
+                                <div class="email-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="email-label">Personal:</span>
+                                    <span class="email-address">mr.niravmehta1@gmail.com</span>
+                                </div>
                             </div>
-                            <div class="contact-text">
-                                <span class="email-label">Personal:</span>
-                                <span class="email-address">mr.niravmehta1@gmail.com</span>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-card email-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope-open-text"></i>
-                            </div>
-                            <div class="contact-text">
-                                <span class="email-label">University:</span>
-                                <span class="email-address">nirav.mehta40015@paruluniversity.ac.in</span>
+                            <div class="email-item">
+                                <div class="email-icon">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="email-label">University:</span>
+                                    <span class="email-address">nirav.mehta40015@paruluniversity.ac.in</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1427,8 +1426,7 @@
         }
     });
     </script>
-    <script src="js/script.js"></script>
-    <script src="js/visitor-counter.js"></script>
+    <script src="js/achievements.js"></script>
     
     <script>
     /**

@@ -1,0 +1,238 @@
+/* Override all instances of pink (#ff69b4) color */
+
+/* General color overrides */
+[style*="color:#ff69b4"], 
+[style*="color: #ff69b4"] {
+    color: #7C3AED !important; /* Violet */
+}
+
+[style*="background:#ff69b4"], 
+[style*="background: #ff69b4"] {
+    background: #7C3AED !important; /* Violet */
+}
+
+[style*="border-color:#ff69b4"], 
+[style*="border-color: #ff69b4"] {
+    border-color: #7C3AED !important; /* Violet */
+}
+
+/* RGBA variations */
+[style*="rgba(255, 105, 180"], 
+[style*="rgba(255,105,180"] {
+    background: rgba(124, 58, 237, 0.2) !important; /* Violet with opacity */
+}
+
+/* Specific elements that might use this color */
+.role-text,
+.sub-title,
+.exp-title,
+.exp-role,
+.email-label,
+.contact-text,
+.section-title {
+    color: #2E2E48 !important; /* Indigo Charcoal */
+}
+
+.exp-duration,
+.contact-icon i,
+.email-icon i,
+.nav-link i,
+.contact-label {
+    color: #7C3AED !important; /* Violet */
+}
+
+/* Header elements */
+.header {
+    background: linear-gradient(135deg, #2E2E48 0%, #1E1E38 100%) !important;
+}
+
+/* Navigation */
+.nav-link.active {
+    border-left: 4px solid #7C3AED !important;
+}
+
+.nav-link:hover {
+    color: #7C3AED !important;
+}
+
+/* Mobile navigation */
+.mobile-nav-item.active {
+    color: #7C3AED !important;
+}
+
+.mobile-menu-toggle {
+    background: #7C3AED !important;
+}
+
+.mobile-menu-toggle:hover {
+    background: #8C4AFD !important;
+}
+
+/* WhatsApp button */
+.whatsapp-button,
+.floating-whatsapp {
+    background: linear-gradient(135deg, #7C3AED 0%, #6C2ADD 100%) !important;
+}
+
+/* Gradients */
+.role-card::before, 
+.contact-card::before, 
+.institution-card::before, 
+.qualifications-card::before, 
+.education-item::before, 
+.research-card::before, 
+.achievement-card::before, 
+.award-card::before, 
+.profile-card::before,
+.experience-card::before,
+.reviewer-card::before,
+.combined-email-card::before {
+    background: linear-gradient(90deg, #7C3AED, #6C2ADD) !important;
+}
+
+/* Box shadows */
+.role-card,
+.contact-card,
+.institution-card,
+.qualifications-card,
+.education-item,
+.research-card,
+.achievement-card,
+.award-card,
+.profile-card,
+.skill-card,
+.experience-card,
+.reviewer-card,
+.book-card,
+.certificate-card,
+.combined-email-card {
+    box-shadow: 0 10px 25px rgba(46, 46, 72, 0.12) !important;
+}
+
+.role-card:hover,
+.contact-card:hover,
+.institution-card:hover,
+.qualifications-card:hover,
+.education-item:hover,
+.research-card:hover,
+.achievement-card:hover,
+.award-card:hover,
+.profile-card:hover,
+.skill-card:hover,
+.experience-card:hover,
+.reviewer-card:hover,
+.book-card:hover,
+.certificate-card:hover,
+.combined-email-card:hover {
+    box-shadow: 0 15px 30px rgba(46, 46, 72, 0.2) !important;
+}
+
+/* Specific files with high occurrence of pink */
+
+/* home-enhancements.css overrides */
+.institution-info p {
+    color: #2E2E48 !important;
+}
+
+.institution-info p::before {
+    color: #7C3AED !important;
+}
+
+.institution-info p:hover {
+    color: #3E3E58 !important;
+}
+
+.qualifications p {
+    color: #2E2E48 !important;
+}
+
+.qualifications p:hover {
+    color: #3E3E58 !important;
+}
+
+.qualifications p:hover i {
+    color: #7C3AED !important;
+}
+
+.qualifications p i {
+    color: #7C3AED !important;
+}
+
+/* achievements.css overrides */
+.achievement-icon {
+    color: #7C3AED !important;
+    background: rgba(124, 58, 237, 0.1) !important;
+}
+
+.achievement-title {
+    color: #2E2E48 !important;
+}
+
+.category-tab:hover {
+    background: rgba(124, 58, 237, 0.1) !important;
+}
+
+/* mobile-navigation.css overrides */
+.mobile-nav-container {
+    box-shadow: 0 -5px 15px rgba(46, 46, 72, 0.15) !important;
+    border-top: 2px solid rgba(124, 58, 237, 0.2) !important;
+}
+
+.mobile-nav-item.active i {
+    color: #7C3AED !important;
+}
+
+.mobile-nav-item::after {
+    background: #7C3AED !important;
+}
+
+.full-menu-close {
+    color: #7C3AED !important;
+}
+
+.full-menu-title {
+    color: #2E2E48 !important;
+}
+
+.full-menu-link i {
+    color: #7C3AED !important;
+}
+
+.full-menu-link:hover {
+    box-shadow: 0 6px 15px rgba(46, 46, 72, 0.15) !important;
+    background: rgba(124, 58, 237, 0.05) !important;
+}
+
+.full-menu-link.active {
+    background: rgba(124, 58, 237, 0.1) !important;
+    border-color: rgba(124, 58, 237, 0.2) !important;
+    color: #7C3AED !important;
+}
+
+/* contact.css overrides */
+.contact-header {
+    background: linear-gradient(135deg, #2E2E48 0%, #3E3E58 100%) !important;
+}
+
+.contact-icon {
+    color: #7C3AED !important;
+    background: rgba(124, 58, 237, 0.1) !important;
+    box-shadow: 0 4px 10px rgba(46, 46, 72, 0.15) !important;
+}
+
+.contact-detail-item:hover .contact-icon {
+    background: rgba(124, 58, 237, 0.25) !important;
+    box-shadow: 0 8px 20px rgba(46, 46, 72, 0.3) !important;
+}
+
+.contact-label {
+    color: #7C3AED !important;
+}
+
+.contact-detail-item:hover .contact-value {
+    color: #7C3AED !important;
+}
+
+.about-me-title {
+    background: linear-gradient(135deg, #2E2E48 0%, #1E1E38 100%) !important;
+}
