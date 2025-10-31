@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ff69b4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Dr. Nirav - Portfolio</title>
     <link rel="stylesheet" href="css/minimal.css">
-    <link rel="stylesheet" href="css/pink-theme.css">
+    <link rel="stylesheet" href="css/pink-white-theme.css">
     <link rel="stylesheet" href="css/skill-cards.css">
     <link rel="stylesheet" href="css/pink-sections.css">
     <link rel="stylesheet" href="css/achievements.css">
@@ -14,17 +17,36 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/professional-theme.css">
+    <link rel="stylesheet" href="css/home-enhancements.css">
+    <link rel="stylesheet" href="css/enhanced-menu.css">
+    <link rel="stylesheet" href="css/contact-enhancements.css">
+    <link rel="stylesheet" href="css/responsive-enhancements.css">
+    <link rel="stylesheet" href="css/mobile-navigation.css">
+    <link rel="stylesheet" href="css/home-mobile.css">
+    <link rel="stylesheet" href="css/section-display.css">
+    <link rel="stylesheet" href="css/contact-center.css">
+    <link rel="stylesheet" href="css/mobile-photo-fix.css">
+    <link rel="stylesheet" href="css/contact-photo.css">
+    <link rel="stylesheet" href="css/whatsapp-button.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
+        <div class="parallax-bg"></div>
         <div class="header-container">
             <div class="header-profile">
-                <img src="assets/images/profile.jpg" alt="Dr. Nirav Mehta" width="100">
+                <div class="profile-image-container">
+                    <img src="assets/images/photofinal.jpg" alt="Dr. Nirav Mehta">
+                </div>
                 <div class="header-title">
                     <h1 class="name">Dr. Nirav Mehta</h1>
                     <h2 class="position">Assistant Professor, Parul University</h2>
+                    <div class="header-cv-container">
+                        <a href="assets/CV_Dr. Nirav Mehta (1).pdf" download class="cv-download-btn">
+                            <i class="fas fa-file-download"></i> Download CV
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="header-contact">
@@ -87,11 +109,13 @@
             </nav>
         </aside>
 
-        <section class="content-section" id="home">
+        <section class="content-section active" id="home">
             <h2 class="section-title">Welcome</h2>
             <div class="home-grid">
                 <div class="profile-card">
-                    <h1 class="intro-name">Dr. Nirav Pareshkumar Mehta</h1>
+                    <div class="intro-container">
+                        <h1 class="intro-name">Dr. Nirav Pareshkumar Mehta</h1>
+                    </div>
                     
                     <div class="role-grid">
                         <div class="role-card">
@@ -106,6 +130,12 @@
                         <div class="role-card">
                             <span class="role-text">MIS Coordinator</span>
                         </div>
+                        <div class="role-card">
+                            <span class="role-text">Advanced AI Trainer</span>
+                        </div>
+                        <div class="role-card">
+                            <span class="role-text">AI/ML Based Automation Developer</span>
+                        </div>
                     </div>
 
                     <div class="institution-card">
@@ -119,8 +149,8 @@
 
                     <div class="qualifications-card">
                         <div class="qualifications">
-                            <p><i class="fas fa-graduation-cap"></i> B.C.A., M.Sc. (I.T & C.A), L.L.B., Ph.D. [Computer Science]</p>
-                            <p><i class="fas fa-id-card"></i> University Reg. No.: ACADEMIC/169/2019-20 [BKNMU]</p>
+                            <p class="qualification-degrees"><i class="fas fa-graduation-cap"></i> <span>B.C.A., M.Sc. (I.T & C.A), L.L.B., Ph.D. [Computer Science]</span></p>
+                            <p><i class="fas fa-id-card"></i> <span>University Reg. No.: ACADEMIC/169/2019-20 [BKNMU]</span></p>
                         </div>
                     </div>
 
@@ -133,20 +163,22 @@
                                 Contact No.: 09067262552
                             </div>
                         </div>
-                        <div class="contact-card">
+                        <div class="contact-card email-card">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-text">
-                                mr.niravmehta1@gmail.com
+                                <span class="email-label">Personal:</span>
+                                <span class="email-address">mr.niravmehta1@gmail.com</span>
                             </div>
                         </div>
-                        <div class="contact-card">
+                        <div class="contact-card email-card">
                             <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope-open-text"></i>
                             </div>
                             <div class="contact-text">
-                                Nirav.mehta40015@paruluniversity.ac.in
+                                <span class="email-label">University:</span>
+                                <span class="email-address">nirav.mehta40015@paruluniversity.ac.in</span>
                             </div>
                         </div>
                     </div>
@@ -154,7 +186,7 @@
             </div>
         </section>
 
-        <section class="content-section" id="education" style="display: none;">
+        <section class="content-section" id="education">
             <h2 class="section-title">Education</h2>
             <div class="education-grid">
                 <div class="education-item">
@@ -216,7 +248,7 @@
             </div>
         </section>
 
-        <section class="content-section" id="research" style="display: none;">
+        <section class="content-section" id="research">
             <h2 class="section-title">Research</h2>
             <div class="research-grid">
                 <div class="research-card">
@@ -333,7 +365,7 @@
             </div>
         </section>
         
-        <section class="content-section" id="patents" style="display: none;">
+        <section class="content-section" id="patents">
             <h2 class="section-title">Patents</h2>
             <div class="research-grid">
                 <div class="research-card">
@@ -375,7 +407,7 @@
                 </div>
             </div>
         </section>
-        <section class="content-section" id="skills" style="display: none;">
+        <section class="content-section" id="skills">
             <h2 class="section-title">Programming Skills & Work Experience <span class="featured-badge">Highlighted</span></h2>
 
             <div class="skills-wrap">
@@ -434,7 +466,7 @@
             </div>
         </section>
 
-        <section class="content-section" id="reviewer" style="display: none;">
+        <section class="content-section" id="reviewer">
             <h2 class="section-title">Role as Reviewer in International Conferences</h2>
             <div class="reviewer-intro">
                 <p><strong>International Conference Reviewer Experience:</strong> Reviewed papers for multiple international conferences, ensuring adherence to quality standards and contributing to the selection process. Demonstrated proficiency in evaluating academic submissions, providing constructive feedback, and upholding the integrity of scholarly discourse.</p>
@@ -493,7 +525,7 @@
             </div>
         </section>
 
-        <section class="content-section" id="achievements" style="display: none;">
+        <section class="content-section" id="achievements">
             <h2 class="section-title">Achievements</h2>
             
             <div class="achievements-categories">
@@ -1021,7 +1053,7 @@
             
         </section>
 
-        <section class="content-section" id="awards" style="display: none;">
+        <section class="content-section" id="awards">
             <h2 class="section-title">Awards & Recognitions</h2>
             <div class="awards-grid">
                 <div class="award-card">
@@ -1062,14 +1094,14 @@
             </div>
         </section>
         
-        <section class="content-section" id="contact" style="display: none;">
+        <section class="content-section" id="contact">
             <h2 class="section-title">Contact Information</h2>
             
             <div class="contact-container">
                 <div class="contact-card-large">
                     <div class="contact-header">
                         <div class="contact-avatar">
-                            <i class="fas fa-user-circle"></i>
+                            <img src="assets/images/photofinal.jpg" alt="Dr. Nirav Mehta" class="contact-photo">
                         </div>
                         <div class="contact-title">
                             <h3>Dr. Nirav Mehta</h3>
@@ -1077,7 +1109,7 @@
                         </div>
                     </div>
                     
-                    <div class="contact-details">
+                    <div class="contact-details centered-contact">
                         <div class="contact-detail-item">
                             <div class="contact-icon">
                                 <i class="fas fa-user"></i>
@@ -1126,6 +1158,9 @@
                             <div class="contact-text">
                                 <span class="contact-label">Phone</span>
                                 <span class="contact-value">+91 9067262552</span>
+                                <a href="https://wa.me/919067262552" target="_blank" class="whatsapp-button">
+                                    <i class="fab fa-whatsapp"></i> Connect on WhatsApp
+                                </a>
                             </div>
                         </div>
                         
@@ -1135,7 +1170,7 @@
                             </div>
                             <div class="contact-text">
                                 <span class="contact-label">Address</span>
-                                <span class="contact-value">Sundaram HighLife, Vaikunt Cross Road, Vadodara, Gujarat 390019</span>
+                                <span class="contact-value">Sundaram HighLife, Vaikunth Cross Road, Vadodara, Gujarat 390019</span>
                             </div>
                         </div>
                     </div>
@@ -1146,7 +1181,7 @@
                     <div class="about-me-content">
                         <p>I am Dr. Nirav Pareshkumar Mehta, an Assistant Professor at Parul University with a passion for academic excellence and research innovation. With a diverse educational background including B.C.A., M.Sc. (I.T & C.A), L.L.B., and Ph.D. in Computer Science, I bring a multidisciplinary approach to my teaching and research.</p>
                         
-                        <p>As an IQAC Coordinator and MIS Coordinator at Parul University, I am committed to maintaining high standards of quality in education and efficient management of information systems. My research interests span across blockchain technology, artificial intelligence, data analytics, and healthcare informatics.</p>
+                        <p>As an IQAC Coordinator and MIS Coordinator at Parul University, I am committed to maintaining high standards of quality in education and efficient management of information systems. Additionally, as an Advanced AI Trainer and AI/ML Based Automation Developer, I specialize in developing cutting-edge artificial intelligence solutions and training professionals in advanced AI technologies. My research interests span across blockchain technology, artificial intelligence, machine learning, data analytics, and healthcare informatics.</p>
                         
                         <p>I have authored 5 books on various computer science topics and published multiple research papers in prestigious journals. My contributions have been recognized through awards and certifications from various national and international organizations.</p>
                         
@@ -1157,31 +1192,331 @@
         </section>
     </main>
 
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav-container">
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#education" class="mobile-nav-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Education</span>
+            </a>
+            <a href="#research" class="mobile-nav-item">
+                <i class="fas fa-microscope"></i>
+                <span>Research</span>
+            </a>
+            <a href="#skills" class="mobile-nav-item">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#contact" class="mobile-nav-item">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919067262552" target="_blank" class="floating-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Full Screen Menu -->
+    <div class="full-menu" id="fullMenu">
+        <button class="full-menu-close" id="fullMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <h3 class="full-menu-title">Menu</h3>
+        <div class="full-menu-links">
+            <a href="#home" class="full-menu-link active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#education" class="full-menu-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Education</span>
+            </a>
+            <a href="#research" class="full-menu-link">
+                <i class="fas fa-microscope"></i>
+                <span>Research</span>
+            </a>
+            <a href="#patents" class="full-menu-link">
+                <i class="fas fa-lightbulb"></i>
+                <span>Patents</span>
+            </a>
+            <a href="#skills" class="full-menu-link">
+                <i class="fas fa-code"></i>
+                <span>Programming Skills</span>
+            </a>
+            <a href="#reviewer" class="full-menu-link">
+                <i class="fas fa-tasks"></i>
+                <span>Reviewer</span>
+            </a>
+            <a href="#achievements" class="full-menu-link">
+                <i class="fas fa-trophy"></i>
+                <span>Achievements</span>
+            </a>
+            <a href="#awards" class="full-menu-link">
+                <i class="fas fa-medal"></i>
+                <span>Awards</span>
+            </a>
+            <a href="#contact" class="full-menu-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const navLinks = document.querySelectorAll('.nav-link');
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+        const fullMenuLinks = document.querySelectorAll('.full-menu-link');
         const sections = document.querySelectorAll('.content-section');
-
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const fullMenu = document.getElementById('fullMenu');
+        const fullMenuClose = document.getElementById('fullMenuClose');
+        
+        // Initialize - make sure only home section is visible on page load
+        sections.forEach(section => {
+            if (section.id === 'home') {
+                section.classList.add('active');
+                section.style.display = 'block';
+            } else {
+                section.classList.remove('active');
+                section.style.display = 'none';
+            }
+        });
+        
+        // Function to handle section switching
+        function switchSection(targetId) {
+            // Remove active class from all sections
+            sections.forEach(section => {
+                section.classList.remove('active');
+                section.style.display = 'none'; // Ensure all sections are hidden
+            });
+            
+            // Show the target section
+            const targetSection = document.getElementById(targetId);
+            targetSection.classList.add('active');
+            targetSection.style.display = 'block';
+            
+            // Update all navigation items
+            updateNavigation(targetId);
+            
+            // Scroll to top on mobile devices
+            if (window.innerWidth <= 992) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            
+            // Close full menu if open
+            fullMenu.classList.remove('active');
+        }
+        
+        // Function to update all navigation items
+        function updateNavigation(targetId) {
+            // Update desktop navigation
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === '#' + targetId) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            
+            // Update mobile navigation
+            mobileNavItems.forEach(item => {
+                if (item.getAttribute('href') === '#' + targetId) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Update full menu navigation
+            fullMenuLinks.forEach(link => {
+                if (link.getAttribute('href') === '#' + targetId) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+        
+        // Desktop navigation click handler
         navLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
-                
-                // Remove active class from all links
-                navLinks.forEach(l => l.classList.remove('active'));
-                
-                // Add active class to clicked link
-                this.classList.add('active');
-                
-                // Hide all sections
-                sections.forEach(section => section.style.display = 'none');
-                
-                // Show the selected section
-                const sectionId = this.getAttribute('href').substring(1);
-                document.getElementById(sectionId).style.display = 'block';
+                const targetId = this.getAttribute('href').substring(1);
+                switchSection(targetId);
             });
         });
+        
+        // Mobile navigation click handler
+        mobileNavItems.forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                switchSection(targetId);
+            });
+        });
+        
+        // Full menu navigation click handler
+        fullMenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                switchSection(targetId);
+            });
+        });
+        
+        // Mobile menu toggle
+        mobileMenuToggle.addEventListener('click', function() {
+            fullMenu.classList.add('active');
+        });
+        
+        // Full menu close
+        fullMenuClose.addEventListener('click', function() {
+            fullMenu.classList.remove('active');
+        });
+        
+        // Close full menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (fullMenu.classList.contains('active') && 
+                !fullMenu.contains(e.target) && 
+                e.target !== mobileMenuToggle && 
+                !mobileMenuToggle.contains(e.target)) {
+                fullMenu.classList.remove('active');
+            }
+        });
+        
+        // Handle back/forward browser navigation
+        window.addEventListener('popstate', function(e) {
+            if (e.state && e.state.section) {
+                switchSection(e.state.section);
+            }
+        });
+        
+        // Fix for iOS touch events
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            const touchElements = document.querySelectorAll('.nav-link, .mobile-nav-item, .full-menu-link, .role-card, .contact-card, .institution-card, .qualifications-card');
+            touchElements.forEach(el => {
+                el.addEventListener('touchstart', function() {}, {passive: true});
+            });
+        }
     });
     </script>
     <script src="js/achievements.js"></script>
+    
+    <script>
+    /**
+     * Visual Effects - Professional Portfolio Enhancements
+     * Adds parallax effects, micro-interactions, and smooth section transitions
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize parallax effect
+        initParallax();
+        
+        // Initialize section transitions
+        initSectionTransitions();
+    });
+
+    /**
+     * Initialize parallax effect for header background
+     */
+    function initParallax() {
+        const parallaxBg = document.querySelector('.parallax-bg');
+        
+        if (!parallaxBg) return;
+        
+        // Check if user prefers reduced motion
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        
+        if (prefersReducedMotion) {
+            parallaxBg.style.display = 'none';
+            return;
+        }
+        
+        // Add parallax effect on mouse move
+        document.addEventListener('mousemove', function(e) {
+            const mouseX = e.clientX / window.innerWidth;
+            const mouseY = e.clientY / window.innerHeight;
+            
+            const moveX = mouseX * 20 - 10;
+            const moveY = mouseY * 20 - 10;
+            
+            parallaxBg.style.transform = `translate3d(${moveX}px, ${moveY}px, 0) scale(1.1)`;
+        });
+        
+        // Add parallax effect on device tilt (for mobile)
+        window.addEventListener('deviceorientation', function(e) {
+            if (e.beta === null || e.gamma === null) return;
+            
+            const tiltX = e.gamma / 90; // -1 to 1 (left to right)
+            const tiltY = e.beta / 90;  // -1 to 1 (front to back)
+            
+            const moveX = tiltX * 10;
+            const moveY = tiltY * 10;
+            
+            parallaxBg.style.transform = `translate3d(${moveX}px, ${moveY}px, 0) scale(1.1)`;
+        });
+    }
+
+    /**
+     * Initialize enhanced section transitions
+     */
+    function initSectionTransitions() {
+        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-item, .full-menu-link');
+        const sections = document.querySelectorAll('.content-section');
+        
+        // Check if user prefers reduced motion
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        
+        if (prefersReducedMotion) {
+            // Make all sections visible without animations
+            sections.forEach(section => {
+                section.style.opacity = '1';
+                section.style.transform = 'none';
+                section.style.transition = 'none';
+            });
+            return;
+        }
+        
+        // Show active section on page load
+        const activeSection = document.querySelector('.content-section.active');
+        if (activeSection) {
+            setTimeout(() => {
+                activeSection.querySelectorAll('*').forEach((el, index) => {
+                    el.style.animationDelay = `${0.1 * (index % 5)}s`;
+                });
+            }, 100);
+        }
+        
+        // Enhance existing click handlers with smooth transitions
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // This just adds additional animation effects
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    // Add staggered animations to children
+                    setTimeout(() => {
+                        targetSection.querySelectorAll('*').forEach((el, index) => {
+                            el.style.animationDelay = `${0.1 * (index % 5)}s`;
+                        });
+                    }, 100);
+                }
+            });
+        });
+    }
+    </script>
 </body>
 </html>

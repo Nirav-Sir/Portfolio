@@ -1,0 +1,60 @@
+/* Section Display Styles */
+
+/* Hide all sections by default */
+.content-section {
+    display: none;
+}
+
+/* Show active section */
+.content-section.active {
+    display: block !important;
+}
+
+/* Ensure content is not cut off */
+.content-section {
+    overflow: visible;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Add padding to ensure content is not hidden under mobile navigation */
+@media (max-width: 992px) {
+    .content-section {
+        padding-bottom: 80px;
+    }
+}
+
+/* Fix for email display in contact section */
+.contact-value {
+    word-break: break-all;
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* Ensure long text doesn't overflow */
+p, h1, h2, h3, h4, h5, h6, span, div {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Fix for mobile navigation z-index */
+.mobile-nav-container {
+    z-index: 1000;
+}
+
+/* Ensure content is visible on page load */
+#home.active {
+    display: block !important;
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+    .content-section {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .email-address {
+        -webkit-text-size-adjust: 100%;
+    }
+}

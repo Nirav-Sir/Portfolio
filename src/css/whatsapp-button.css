@@ -1,0 +1,403 @@
+/* WhatsApp Button Styling */
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border: 2px solid #25D366;
+}
+
+.whatsapp-button:hover {
+    background-color: #22c15e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-button i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+/* Pulse animation for the button */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-button {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .whatsapp-button i {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .whatsapp-button {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.9rem;
+        margin-top: 0.6rem;
+    }
+    
+    .whatsapp-button i {
+        font-size: 1rem;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .whatsapp-button {
+        box-shadow: 0 4px 10px rgba(37, 211, 102, 0.5);
+    }
+    
+    .whatsapp-button:hover {
+        box-shadow: 0 6px 15px rgba(37, 211, 102, 0.6);
+    }
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.floating-whatsapp i {
+    font-size: 2rem;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    background-color: #22c15e;
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.5);
+}
+
+/* Responsive styles for floating button */
+@media (max-width: 768px) {
+    .floating-whatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 70px;
+    }
+    
+    .floating-whatsapp i {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .floating-whatsapp {
+        width: 45px;
+        height: 45px;
+        bottom: 70px;
+        left: 15px;
+    }
+    
+    .floating-whatsapp i {
+        font-size: 1.5rem;
+    }
+}
+
+/* CV Download Button Styling */
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff69b4 0%, #db7093 100%);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    box-shadow: 0 6px 15px rgba(255, 105, 180, 0.25);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cv-download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.7s ease;
+    z-index: -1;
+}
+
+.cv-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+    background: linear-gradient(135deg, #ff69b4 20%, #db7093 120%);
+}
+
+.cv-download-btn:hover::before {
+    left: 100%;
+}
+
+.cv-download-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+.cv-download-btn i {
+    margin-right: 0.6rem;
+    font-size: 1.2rem;
+}
+
+/* Header CV Button Container */
+.header-cv-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+/* Animation for attention */
+@keyframes pulse-light {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 105, 180, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
+    }
+}
+
+.cv-download-btn {
+    animation: pulse-light 2s infinite;
+}
+
+/* Responsive styles for CV button */
+@media (max-width: 768px) {
+    .cv-download-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+    }
+    
+    .cv-download-btn i {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cv-download-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .cv-download-btn i {
+        font-size: 1rem;
+    }
+}
+
+/* ===== VISUAL ENHANCEMENTS ===== */
+
+/* ===== 1. Subtle Parallax Effects ===== */
+.header {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.3) 0%, rgba(219, 112, 147, 0.3) 100%);
+    z-index: -1;
+    transform: translateZ(0);
+}
+
+.parallax-bg {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23ffffff" opacity="0.05"/></svg>');
+    background-size: 100px 100px;
+    z-index: -2;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* ===== 2. Micro-interactions ===== */
+/* Button click effect */
+button, .nav-link, .role-card, .contact-card, .cv-download-btn, .whatsapp-button, .floating-whatsapp {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+}
+
+button:active, .nav-link:active, .role-card:active, .contact-card:active, .cv-download-btn:active, .whatsapp-button:active, .floating-whatsapp:active {
+    transform: scale(0.97);
+}
+
+/* Card hover effects enhancement */
+.role-card, .contact-card, .institution-card, .qualifications-card, .education-item, .research-card, .achievement-card, .award-card, .profile-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.role-card:hover, .contact-card:hover, .institution-card:hover, .qualifications-card:hover, .education-item:hover, .research-card:hover, .achievement-card:hover, .award-card:hover, .profile-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* Icon hover effects */
+.contact-icon i, .nav-link i, button i, .cv-download-btn i, .whatsapp-button i {
+    transition: transform 0.3s ease;
+}
+
+.contact-icon:hover i, .nav-link:hover i, button:hover i, .cv-download-btn:hover i, .whatsapp-button:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* ===== 3. Custom Cursor ===== */
+/* Base cursor styles */
+html, body {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="%23ff69b4" stroke-width="1.5" fill="white" opacity="0.8"/></svg>') 8 8, auto;
+}
+
+/* Interactive element cursor */
+a, button, .nav-link, .role-card, .contact-card, .cv-download-btn, .whatsapp-button, .floating-whatsapp, .mobile-nav-item, .full-menu-link {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="%23ff69b4" stroke-width="2" fill="white" opacity="0.9"/><circle cx="12" cy="12" r="4" fill="%23ff69b4" opacity="0.9"/></svg>') 12 12, pointer;
+}
+
+/* Text selection cursor */
+p, h1, h2, h3, h4, h5, h6, span, div {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="%23ff69b4" stroke-width="1.5" fill="white" opacity="0.8"/></svg>') 8 8, auto;
+}
+
+/* ===== 4. Animated Section Transitions ===== */
+/* Base section transition */
+.content-section {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    will-change: opacity, transform;
+}
+
+.content-section:not(.active) {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+.content-section.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Section entry animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-section.active {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Staggered child animations */
+.content-section.active > * {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.content-section.active > *:nth-child(1) { animation-delay: 0.1s; }
+.content-section.active > *:nth-child(2) { animation-delay: 0.2s; }
+.content-section.active > *:nth-child(3) { animation-delay: 0.3s; }
+.content-section.active > *:nth-child(4) { animation-delay: 0.4s; }
+.content-section.active > *:nth-child(5) { animation-delay: 0.5s; }
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .parallax-bg {
+        display: none;
+    }
+    
+    .content-section,
+    .content-section.active,
+    .content-section.active > * {
+        transition: none;
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    button, .nav-link, .role-card, .contact-card, .cv-download-btn, .whatsapp-button, .floating-whatsapp,
+    .role-card, .contact-card, .institution-card, .qualifications-card, .education-item, .research-card, .achievement-card, .award-card, .profile-card,
+    .contact-icon i, .nav-link i, button i, .cv-download-btn i, .whatsapp-button i {
+        transition: none;
+    }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .parallax-bg {
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+    }
+    
+    .content-section.active > * {
+        animation-delay: 0.1s !important;
+    }
+}

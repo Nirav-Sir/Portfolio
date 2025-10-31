@@ -1,0 +1,271 @@
+/* Enhanced Mobile Responsiveness */
+
+/* General Responsive Adjustments */
+@media (max-width: 1200px) {
+    .main-content {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        margin: 1.5rem auto;
+    }
+    
+    .sidebar {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    
+    .nav-menu {
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+    
+    .content-section {
+        padding: 1.5rem;
+    }
+    
+    .profile-card {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet Adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 1.5rem 0;
+    }
+    
+    .header-container {
+        padding: 0 1.5rem;
+    }
+    
+    .header-profile img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .position {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .intro-name {
+        font-size: 2rem;
+    }
+    
+    .role-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+    
+    .institution-info p {
+        font-size: 1.1rem;
+    }
+    
+    .qualifications p {
+        font-size: 1.1rem;
+    }
+    
+    .contact-name {
+        font-size: 1.6rem;
+    }
+    
+    .contact-affiliation {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
+    }
+    
+    .contact-value {
+        font-size: 1rem;
+    }
+    
+    .contact-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+    .header {
+        padding: 1.2rem 0;
+    }
+    
+    .profile-image-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .header-title {
+        margin-left: 1rem;
+    }
+    
+    .name {
+        font-size: 1.8rem;
+    }
+    
+    .position {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .intro-name {
+        font-size: 1.8rem;
+    }
+    
+    .role-card {
+        padding: 1rem;
+    }
+    
+    .role-text {
+        font-size: 1rem;
+    }
+    
+    .institution-info p {
+        font-size: 1rem;
+        padding-left: 1.2rem;
+    }
+    
+    .qualifications p {
+        font-size: 1rem;
+    }
+    
+    .contact-name-affiliation {
+        padding-bottom: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-name {
+        font-size: 1.4rem;
+    }
+    
+    .contact-affiliation {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .contact-detail-item {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-icon {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+    }
+    
+    .contact-text {
+        text-align: center;
+    }
+    
+    .contact-value {
+        font-size: 0.95rem;
+    }
+    
+    .contact-label {
+        font-size: 0.85rem;
+    }
+    
+    /* Fix for contact detail items on hover */
+    .contact-detail-item:hover .contact-value {
+        transform: none;
+    }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 400px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+    
+    .header-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-title {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    
+    .name {
+        font-size: 1.6rem;
+    }
+    
+    .position {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .intro-name {
+        font-size: 1.6rem;
+    }
+    
+    .role-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .institution-card, 
+    .qualifications-card {
+        padding: 1.2rem;
+    }
+    
+    .contact-name {
+        font-size: 1.3rem;
+    }
+    
+    .contact-affiliation {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Preserve Animations */
+@media (max-width: 768px) {
+    /* Keep animations but adjust their scale */
+    .role-card:hover,
+    .institution-card:hover,
+    .qualifications-card:hover,
+    .contact-card:hover,
+    .contact-card-large:hover,
+    .about-me-section:hover,
+    .achievement-card:hover,
+    .award-card:hover,
+    .education-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .nav-link:hover {
+        transform: translateX(3px);
+    }
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+    .header,
+    .content-section,
+    .nav-menu,
+    .role-card,
+    .institution-card,
+    .qualifications-card,
+    .contact-card-large,
+    .about-me-section {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}

@@ -1,0 +1,416 @@
+/* Professional Pink & White Theme - Updated */
+
+/* Color Variables */
+:root {
+    --primary-pink: #ff69b4;
+    --primary-pink-light: #ffb6c1;
+    --primary-pink-dark: #db7093;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --dark-gray: #343a40;
+    --text-dark: #212529;
+    --text-light: #6c757d;
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-pink-dark) 100%);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(30deg);
+}
+
+.name {
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Button Effects */
+.nav-menu {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(255, 105, 180, 0.15);
+    overflow: hidden;
+}
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 105, 180, 0.1), transparent);
+    transition: left 0.7s ease;
+    z-index: -1;
+}
+
+.nav-link:hover::before {
+    left: 100%;
+}
+
+.nav-link:hover {
+    background: var(--primary-pink-light);
+    color: var(--primary-pink-dark);
+    transform: translateX(5px);
+    box-shadow: inset 0 0 10px rgba(255, 105, 180, 0.1);
+}
+
+.nav-link.active {
+    background: var(--primary-pink-light);
+    color: var(--primary-pink-dark);
+    font-weight: 500;
+    border-left: 4px solid var(--primary-pink);
+}
+
+.nav-link i {
+    color: var(--primary-pink);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Section Styling */
+.section-title {
+    color: var(--primary-pink-dark);
+    border-bottom: 2px solid var(--primary-pink);
+}
+
+.content-section {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(255, 105, 180, 0.15);
+}
+
+/* Profile Card Styling */
+.profile-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(255, 105, 180, 0.15);
+    border: 1px solid rgba(255, 105, 180, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Top border effect for profile card - like education cards */
+.profile-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-pink), var(--primary-pink-dark));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+/* Enhanced glossy effect for profile card */
+.profile-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.3) 25%, 
+        rgba(255,255,255,0.3) 50%, 
+        rgba(255,255,255,0) 100%
+    );
+    transform: skewX(-25deg);
+    transition: all 0.75s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.profile-card:hover {
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.25);
+    transform: translateY(-10px);
+    border-color: rgba(255, 105, 180, 0.3);
+}
+
+.profile-card:hover::before {
+    transform: scaleX(1);
+}
+
+.profile-card:hover::after {
+    left: 100%;
+}
+
+.intro-name {
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-pink-dark) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 10px rgba(255, 105, 180, 0.2);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Role Cards */
+.role-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.15);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 1.2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top border effect for role cards - like education cards */
+.role-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-pink), var(--primary-pink-dark));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+/* Glossy effect for role cards */
+.role-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.3) 25%, 
+        rgba(255,255,255,0.3) 50%, 
+        rgba(255,255,255,0) 100%
+    );
+    transform: skewX(-25deg);
+    transition: all 0.75s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.role-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.25);
+    border-color: rgba(255, 105, 180, 0.3);
+}
+
+.role-card:hover::before {
+    transform: scaleX(1);
+}
+
+.role-card:hover::after {
+    left: 100%;
+}
+
+.role-text {
+    color: var(--primary-pink);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.role-card:hover .role-text {
+    transform: scale(1.05);
+    color: var(--primary-pink-dark);
+}
+
+/* Featured Badge Styling */
+.featured-badge {
+    background: linear-gradient(90deg, var(--primary-pink-light), var(--primary-pink));
+    color: var(--white);
+}
+
+.featured-mini {
+    background: var(--primary-pink-light);
+    color: var(--primary-pink-dark);
+}
+
+/* Skill Cards - Enhanced with Animation */
+.skills-list {
+    perspective: 1000px;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    border-radius: 12px;
+    color: var(--text-dark);
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.1);
+    border: 1px solid rgba(255, 105, 180, 0.08);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 1.2rem 1.5rem;
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.05) 0%, rgba(255, 105, 180, 0.1) 100%);
+    clip-path: circle(0% at 0% 0%);
+    transition: clip-path 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.skill-card:hover::before {
+    clip-path: circle(150% at 0% 0%);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 20px 30px rgba(255, 105, 180, 0.15);
+    border-color: rgba(255, 105, 180, 0.2);
+}
+
+.skill-card.highlight {
+    background: linear-gradient(135deg, var(--primary-pink-light) 0%, var(--white) 100%);
+    border: 1px solid rgba(255, 105, 180, 0.2);
+    box-shadow: 0 15px 25px rgba(255, 105, 180, 0.15);
+    color: var(--primary-pink-dark);
+}
+
+.skill-card.highlight:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 25px 35px rgba(255, 105, 180, 0.2);
+}
+
+/* Experience Cards */
+.experience-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.1);
+    border: 1px solid rgba(255, 105, 180, 0.08);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(to bottom, var(--primary-pink), var(--primary-pink-dark));
+    transition: height 0.4s ease;
+    z-index: -1;
+}
+
+.experience-card:hover::before {
+    height: 100%;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(255, 105, 180, 0.15);
+}
+
+.experience-card.highlight {
+    background: linear-gradient(135deg, var(--primary-pink-light) 0%, var(--white) 100%);
+    border: 1px solid rgba(255, 105, 180, 0.15);
+    box-shadow: 0 15px 25px rgba(255, 105, 180, 0.15);
+}
+
+.exp-title {
+    color: var(--primary-pink-dark);
+    font-weight: 700;
+}
+
+.exp-duration {
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+
+.exp-role {
+    color: var(--primary-pink-dark);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* Glossy Effects */
+.content-section, .profile-card, .role-card, .skill-card, .experience-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.content-section::after, .profile-card::after, .role-card::after, .skill-card::after, .experience-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.2) 25%, 
+        rgba(255,255,255,0.2) 50%, 
+        rgba(255,255,255,0) 100%
+    );
+    transform: skewX(-25deg);
+    transition: all 0.75s ease;
+    pointer-events: none;
+}
+
+.content-section:hover::after, .profile-card:hover::after, .role-card:hover::after, 
+.skill-card:hover::after, .experience-card:hover::after {
+    left: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-link {
+        padding: 0.8rem 1.2rem;
+    }
+    
+    .nav-link:hover {
+        transform: translateX(3px);
+    }
+    
+    .skill-card:hover,
+    .experience-card:hover {
+        transform: translateY(-5px);
+    }
+}
