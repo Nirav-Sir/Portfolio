@@ -1,0 +1,246 @@
+/* Custom Pink & White Professional Theme */
+
+/* Color Variables */
+:root {
+    --primary-pink: #e83e8c;
+    --primary-pink-light: #f8d7e5;
+    --primary-pink-dark: #c2185b;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --dark-gray: #343a40;
+    --text-dark: #212529;
+    --text-light: #6c757d;
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-pink-dark) 100%);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 15px rgba(232, 62, 140, 0.2);
+}
+
+.name {
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Menu Styling */
+.nav-menu {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(232, 62, 140, 0.1);
+    overflow: hidden;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Menu Button Effects */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(232, 62, 140, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.nav-link:hover::before {
+    left: 100%;
+}
+
+.nav-link:hover {
+    background: var(--primary-pink-light);
+    color: var(--primary-pink-dark);
+    transform: translateX(5px);
+}
+
+.nav-link.active {
+    background: var(--primary-pink-light);
+    color: var(--primary-pink-dark);
+    font-weight: 500;
+    border-left: 4px solid var(--primary-pink);
+}
+
+.nav-link i {
+    color: var(--primary-pink);
+    width: 20px;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover i {
+    transform: scale(1.2);
+}
+
+/* Section Styling */
+.section-title {
+    color: var(--primary-pink-dark);
+    border-bottom: 2px solid var(--primary-pink);
+}
+
+.content-section {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(232, 62, 140, 0.1);
+}
+
+/* Card Styling */
+.profile-card {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(232, 62, 140, 0.1);
+}
+
+.role-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(232, 62, 140, 0.08);
+    border-left: 3px solid var(--primary-pink);
+}
+
+.role-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(232, 62, 140, 0.12);
+}
+
+.role-text {
+    color: var(--primary-pink-dark);
+}
+
+/* Featured Badge Styling */
+.featured-badge {
+    background: linear-gradient(90deg, var(--primary-pink-light), var(--primary-pink));
+    color: var(--white);
+}
+
+.featured-mini {
+    background: var(--primary-pink-light);
+    color: var(--primary-pink-dark);
+}
+
+/* Skill Cards */
+.skill-card {
+    background: linear-gradient(180deg, var(--white), var(--light-gray));
+    border-radius: 12px;
+    color: var(--text-dark);
+    box-shadow: 0 5px 15px rgba(232, 62, 140, 0.06);
+    border: 1px solid rgba(232, 62, 140, 0.06);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px) rotate(-0.25deg);
+    box-shadow: 0 10px 25px rgba(232, 62, 140, 0.12);
+    border-color: var(--primary-pink-light);
+}
+
+.skill-card.highlight {
+    background: linear-gradient(180deg, var(--primary-pink-light), var(--white));
+    border: 1px solid rgba(232, 62, 140, 0.16);
+    box-shadow: 0 8px 20px rgba(232, 62, 140, 0.08);
+    color: var(--primary-pink-dark);
+}
+
+/* Experience Cards */
+.experience-card {
+    background: linear-gradient(180deg, var(--white), var(--light-gray));
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(232, 62, 140, 0.07);
+    border: 1px solid rgba(232, 62, 140, 0.06);
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(232, 62, 140, 0.12);
+}
+
+.experience-card.highlight {
+    background: linear-gradient(90deg, var(--primary-pink-light), var(--white));
+    border: 1px solid rgba(232, 62, 140, 0.12);
+    box-shadow: 0 8px 25px rgba(232, 62, 140, 0.08);
+}
+
+.exp-title {
+    color: var(--primary-pink-dark);
+}
+
+.exp-duration {
+    color: var(--primary-pink);
+}
+
+.exp-role {
+    color: var(--primary-pink-dark);
+}
+
+/* Research Cards */
+.research-card {
+    background: linear-gradient(180deg, var(--white), var(--light-gray));
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(232, 62, 140, 0.08);
+    border: 1px solid rgba(232, 62, 140, 0.06);
+}
+
+.research-card::before {
+    background: linear-gradient(90deg, var(--primary-pink), var(--primary-pink-dark));
+}
+
+.research-badge {
+    background: var(--primary-pink);
+}
+
+.research-title {
+    color: var(--primary-pink-dark);
+}
+
+/* Education Cards */
+.education-item {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(232, 62, 140, 0.08);
+}
+
+.education-item::before {
+    background: linear-gradient(90deg, var(--primary-pink), var(--primary-pink-dark));
+}
+
+.education-degree {
+    color: var(--primary-pink-dark);
+}
+
+.education-school {
+    color: var(--primary-pink);
+}
+
+.education-grade {
+    background: linear-gradient(135deg, var(--primary-pink-light), var(--white));
+    color: var(--primary-pink-dark);
+}
+
+/* Gold Medal Animation */
+.gold-medal {
+    color: #ffd700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-link {
+        padding: 0.8rem 1.2rem;
+    }
+    
+    .nav-link:hover {
+        transform: translateX(3px);
+    }
+}

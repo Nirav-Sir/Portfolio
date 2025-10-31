@@ -1,0 +1,22 @@
+{
+  "name": "dr-nirav-portfolio",
+  "description": "A portfolio website for Dr. Nirav showcasing projects and skills.",
+  "main": "src/index.html",
+  "authors": [
+    "Dr. Nirav"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2"
+  },
+  "devDependencies": {
+    "bower": "^1.8.8"
+  },
+  "homepage": "https://github.com/dr-nirav/portfolio",
+  "keywords": [
+    "portfolio",
+    "angularjs",
+    "website"
+  ]
+}

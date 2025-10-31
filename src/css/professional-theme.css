@@ -1,0 +1,361 @@
+/* Professional Color Theme - Modern Blue & Gold */
+
+/* Color Variables */
+:root {
+    --primary-blue: #2c3e50;
+    --primary-blue-light: #34495e;
+    --primary-blue-dark: #1a252f;
+    --accent-gold: #f1c40f;
+    --accent-gold-light: #f4d03f;
+    --accent-gold-dark: #d4ac0d;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --dark-gray: #343a40;
+    --text-dark: #212529;
+    --text-light: #6c757d;
+    --text-blue: #2c3e50;
+    --shadow-color: rgba(44, 62, 80, 0.15);
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+    box-shadow: 0 4px 20px rgba(44, 62, 80, 0.3);
+}
+
+.header::before {
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+}
+
+.header-contact-item i {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header-contact-item:hover i {
+    background: rgba(241, 196, 15, 0.3);
+}
+
+/* Navigation Menu */
+.nav-menu {
+    background: var(--white);
+    box-shadow: 0 5px 20px rgba(44, 62, 80, 0.1);
+}
+
+.nav-link {
+    color: var(--text-blue);
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.nav-link::before {
+    background: linear-gradient(90deg, transparent, rgba(44, 62, 80, 0.1), transparent);
+}
+
+.nav-link:hover {
+    background: rgba(44, 62, 80, 0.05);
+    color: var(--primary-blue);
+}
+
+.nav-link.active {
+    background: rgba(44, 62, 80, 0.1);
+    color: var(--primary-blue);
+    border-left: 4px solid var(--accent-gold);
+}
+
+.nav-link i {
+    color: var(--accent-gold);
+}
+
+/* Section Styling */
+.section-title {
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.content-section {
+    background: var(--white);
+    box-shadow: 0 5px 20px rgba(44, 62, 80, 0.1);
+}
+
+/* Card Styling - Achievement Cards */
+.achievement-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    box-shadow: 0 10px 25px var(--shadow-color);
+    border: 1px solid rgba(44, 62, 80, 0.08);
+}
+
+.achievement-card::before {
+    background: linear-gradient(to bottom, var(--accent-gold), var(--accent-gold-dark));
+}
+
+.achievement-number {
+    background: var(--accent-gold);
+    color: var(--primary-blue-dark);
+    box-shadow: 0 2px 5px rgba(44, 62, 80, 0.3);
+}
+
+.achievement-icon {
+    color: var(--primary-blue);
+    background: rgba(44, 62, 80, 0.1);
+}
+
+.achievement-card:hover .achievement-icon {
+    background: rgba(44, 62, 80, 0.15);
+}
+
+.achievement-title {
+    color: var(--primary-blue);
+}
+
+.achievement-meta {
+    color: var(--text-light);
+}
+
+.achievement-description {
+    color: var(--text-dark);
+}
+
+/* Certificate Cards */
+.certificate-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    box-shadow: 0 10px 25px var(--shadow-color);
+    border: 1px solid rgba(44, 62, 80, 0.08);
+}
+
+.certificate-card::before {
+    background: linear-gradient(90deg, var(--accent-gold), var(--accent-gold-dark));
+}
+
+.certificate-number {
+    background: var(--accent-gold);
+    color: var(--primary-blue-dark);
+    box-shadow: 0 2px 5px rgba(44, 62, 80, 0.3);
+}
+
+.certificate-icon {
+    color: var(--primary-blue);
+    background: rgba(44, 62, 80, 0.1);
+}
+
+.certificate-card:hover .certificate-icon {
+    background: rgba(44, 62, 80, 0.15);
+}
+
+.certificate-title {
+    color: var(--primary-blue);
+}
+
+.certificate-meta {
+    color: var(--text-light);
+}
+
+.certificate-description {
+    color: var(--text-dark);
+}
+
+/* Book Cards */
+.book-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    box-shadow: 0 10px 25px var(--shadow-color);
+    border: 1px solid rgba(44, 62, 80, 0.08);
+}
+
+.book-card::before {
+    background: linear-gradient(90deg, var(--accent-gold), var(--accent-gold-dark));
+}
+
+.book-number {
+    background: var(--accent-gold);
+    color: var(--primary-blue-dark);
+    box-shadow: 0 2px 5px rgba(44, 62, 80, 0.3);
+}
+
+.book-icon {
+    color: var(--primary-blue);
+    background: rgba(44, 62, 80, 0.1);
+}
+
+.book-card:hover .book-icon {
+    background: rgba(44, 62, 80, 0.15);
+}
+
+.book-title {
+    color: var(--primary-blue);
+}
+
+.book-meta {
+    color: var(--text-light);
+}
+
+.book-description {
+    color: var(--text-dark);
+}
+
+/* Award Cards */
+.award-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    box-shadow: 0 10px 25px var(--shadow-color);
+    border: 1px solid rgba(44, 62, 80, 0.08);
+}
+
+.award-card::before {
+    background: linear-gradient(90deg, var(--accent-gold), var(--accent-gold-dark));
+}
+
+.award-number {
+    background: var(--accent-gold);
+    color: var(--primary-blue-dark);
+    box-shadow: 0 2px 5px rgba(44, 62, 80, 0.3);
+}
+
+.award-icon {
+    color: var(--primary-blue);
+    background: rgba(44, 62, 80, 0.1);
+}
+
+.award-card:hover .award-icon {
+    background: rgba(44, 62, 80, 0.15);
+}
+
+.award-title {
+    color: var(--primary-blue);
+}
+
+.award-meta {
+    color: var(--text-light);
+}
+
+.award-description {
+    color: var(--text-dark);
+}
+
+/* Skill Cards */
+.skill-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    box-shadow: 0 10px 20px var(--shadow-color);
+    border: 1px solid rgba(44, 62, 80, 0.08);
+}
+
+.skill-card::before {
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.05) 0%, rgba(44, 62, 80, 0.1) 100%);
+}
+
+.skill-card:hover {
+    border-color: rgba(44, 62, 80, 0.2);
+}
+
+.skill-card.highlight {
+    background: linear-gradient(135deg, rgba(241, 196, 15, 0.1) 0%, var(--white) 100%);
+    border: 1px solid rgba(241, 196, 15, 0.2);
+    box-shadow: 0 15px 25px rgba(44, 62, 80, 0.15);
+    color: var(--primary-blue);
+}
+
+/* Experience Cards */
+.experience-card {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    box-shadow: 0 10px 20px var(--shadow-color);
+    border: 1px solid rgba(44, 62, 80, 0.08);
+}
+
+.experience-card::before {
+    background: linear-gradient(to bottom, var(--accent-gold), var(--accent-gold-dark));
+}
+
+.experience-card.highlight {
+    background: linear-gradient(135deg, rgba(241, 196, 15, 0.1) 0%, var(--white) 100%);
+    border: 1px solid rgba(241, 196, 15, 0.15);
+    box-shadow: 0 15px 25px rgba(44, 62, 80, 0.15);
+}
+
+.exp-title {
+    color: var(--primary-blue);
+}
+
+.exp-duration {
+    color: var(--accent-gold-dark);
+}
+
+.exp-role {
+    color: var(--primary-blue);
+}
+
+/* Contact Section */
+.contact-card-large {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    box-shadow: 0 15px 30px var(--shadow-color);
+    border: 1px solid rgba(44, 62, 80, 0.08);
+}
+
+.contact-header {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+}
+
+.contact-icon {
+    color: var(--primary-blue);
+    background: rgba(44, 62, 80, 0.1);
+}
+
+.contact-detail-item:hover .contact-icon {
+    background: rgba(44, 62, 80, 0.15);
+}
+
+.contact-label {
+    color: var(--text-light);
+}
+
+.contact-value {
+    color: var(--text-dark);
+}
+
+/* About Me Section */
+.about-me-section {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    box-shadow: 0 15px 30px var(--shadow-color);
+    border: 1px solid rgba(44, 62, 80, 0.08);
+}
+
+.about-me-title {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+}
+
+/* Category Tabs */
+.category-tab {
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    border: 1px solid rgba(44, 62, 80, 0.1);
+    color: var(--text-dark);
+    box-shadow: 0 4px 10px rgba(44, 62, 80, 0.08);
+}
+
+.category-tab:hover {
+    background: linear-gradient(135deg, rgba(241, 196, 15, 0.1) 0%, var(--white) 100%);
+    color: var(--primary-blue);
+}
+
+.category-tab.active {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 6px 15px rgba(44, 62, 80, 0.2);
+}
+
+/* Subcategory Titles */
+.subcategory-title {
+    color: var(--primary-blue);
+    border-bottom: 2px solid rgba(44, 62, 80, 0.3);
+}
+
+.subcategory-title::after {
+    background: linear-gradient(90deg, var(--accent-gold), transparent);
+}
+
+/* Featured Badges */
+.featured-badge {
+    background: linear-gradient(90deg, var(--accent-gold-light), var(--accent-gold));
+    color: var(--primary-blue-dark);
+}
+
+.featured-mini {
+    background: rgba(241, 196, 15, 0.2);
+    color: var(--primary-blue);
+}

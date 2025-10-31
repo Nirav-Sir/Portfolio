@@ -1,0 +1,17 @@
+{
+    "name": "dr-nirav-portfolio",
+    "version": "1.0.0",
+    "description": "Simple portfolio for Dr Nirav",
+    "main": "src/index.html",
+    "scripts": {
+        "start": "npm run serve",
+        "serve": "browser-sync start --server \"src\" --files \"src/**/*\" --no-open",
+        "build": "echo \"No build step; files are static\"",
+        "lint": "echo \"No linter configured\""
+    },
+    "author": "Dr Nirav",
+    "license": "MIT",
+    "devDependencies": {
+        "browser-sync": "^2.27.11"
+    }
+}
