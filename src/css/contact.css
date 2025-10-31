@@ -12,8 +12,8 @@
 .contact-card-large {
     background: linear-gradient(135deg, #ffffff 0%, #fbfdff 100%);
     border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(48, 63, 159, 0.15);
-    border: 1px solid rgba(48, 63, 159, 0.1);
+    box-shadow: 0 15px 30px rgba(255, 105, 180, 0.15);
+    border: 1px solid rgba(255, 105, 180, 0.1);
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     height: 100%;
@@ -28,7 +28,7 @@
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, #303F9F, #26A69A);
+    background: linear-gradient(90deg, #ff69b4, #db7093);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -58,8 +58,8 @@
 
 .contact-card-large:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(48, 63, 159, 0.25);
-    border-color: rgba(48, 63, 159, 0.3);
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.25);
+    border-color: rgba(255, 105, 180, 0.3);
 }
 
 .contact-card-large:hover::before {
@@ -72,7 +72,7 @@
 
 /* Contact Header */
 .contact-header {
-    background: linear-gradient(135deg, #303F9F 0%, #26A69A 100%);
+    background: linear-gradient(135deg, #ff69b4 0%, #db7093 100%);
     padding: 2.2rem;
     display: flex;
     align-items: center;
@@ -145,10 +145,10 @@
 }
 
 .contact-icon {
-    color: #303F9F;
+    color: #ff69b4;
     font-size: 1.3rem;
     margin-right: 1rem;
-    background: rgba(48, 63, 159, 0.1);
+    background: rgba(255, 105, 180, 0.1);
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -156,13 +156,13 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(48, 63, 159, 0.15);
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.15);
 }
 
 .contact-detail-item:hover .contact-icon {
     transform: scale(1.2) rotate(15deg);
-    background: rgba(48, 63, 159, 0.25);
-    box-shadow: 0 8px 20px rgba(48, 63, 159, 0.3);
+    background: rgba(255, 105, 180, 0.25);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
 }
 
 .contact-text {
@@ -172,14 +172,14 @@
 }
 
 .contact-label {
-    color: #26A69A;
+    color: #db7093;
     font-size: 0.95rem;
     margin-bottom: 0.3rem;
     font-weight: 500;
 }
 
 .contact-value {
-    color: #303F9F;
+    color: #ff69b4;
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.2rem;
@@ -187,7 +187,7 @@
 }
 
 .contact-detail-item:hover .contact-value {
-    color: #26A69A;
+    color: #db7093;
     transform: translateX(5px);
 }
 
@@ -195,8 +195,8 @@
 .about-me-section {
     background: linear-gradient(135deg, #ffffff 0%, #fbfdff 100%);
     border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(48, 63, 159, 0.15);
-    border: 1px solid rgba(48, 63, 159, 0.1);
+    box-shadow: 0 15px 30px rgba(255, 105, 180, 0.15);
+    border: 1px solid rgba(255, 105, 180, 0.1);
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     height: 100%;
@@ -211,7 +211,7 @@
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, #303F9F, #26A69A);
+    background: linear-gradient(90deg, #ff69b4, #db7093);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -240,8 +240,8 @@
 
 .about-me-section:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(48, 63, 159, 0.25);
-    border-color: rgba(48, 63, 159, 0.3);
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.25);
+    border-color: rgba(255, 105, 180, 0.3);
 }
 
 .about-me-section:hover::before {
@@ -253,7 +253,7 @@
 }
 
 .about-me-title {
-    background: linear-gradient(135deg, #303F9F 0%, #26A69A 100%);
+    background: linear-gradient(135deg, #ff69b4 0%, #db7093 100%);
     color: white;
     padding: 1.7rem 2rem;
     margin: 0;
@@ -288,7 +288,7 @@
 }
 
 .about-me-section:hover .about-me-content p {
-    color: #303F9F;
+    color: #ff69b4;
 }
 
 .about-me-content p:last-child {
