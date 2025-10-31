@@ -1,0 +1,73 @@
+/* Blue Override - Replace any remaining pink colors with blue */
+
+/* Override CSS variables */
+:root {
+    --primary-pink: #303F9F !important;
+    --primary-pink-light: #3F51B5 !important;
+    --primary-pink-dark: #1A237E !important;
+}
+
+/* Target specific pink colors */
+[style*="#ff69b4"] {
+    color: #303F9F !important;
+}
+
+[style*="#db7093"] {
+    color: #1A237E !important;
+}
+
+[style*="#ffb6c1"] {
+    color: #3F51B5 !important;
+}
+
+/* Override specific elements that might still have pink */
+.header {
+    background: linear-gradient(135deg, #303F9F 0%, #1A237E 100%) !important;
+    box-shadow: 0 4px 15px rgba(48, 63, 159, 0.3) !important;
+}
+
+.nav-menu {
+    box-shadow: 0 5px 20px rgba(48, 63, 159, 0.15) !important;
+}
+
+.nav-link:hover {
+    background: var(--accent-teal-light) !important;
+    color: var(--primary-blue-dark) !important;
+}
+
+.nav-link.active {
+    background: var(--accent-teal-light) !important;
+    color: var(--primary-blue-dark) !important;
+    border-left: 4px solid var(--primary-blue) !important;
+}
+
+.nav-link i {
+    color: var(--primary-blue) !important;
+}
+
+.section-title {
+    color: var(--primary-blue-dark) !important;
+    border-bottom: 2px solid var(--accent-teal) !important;
+}
+
+.featured-badge {
+    background: linear-gradient(90deg, var(--accent-teal-light), var(--accent-teal)) !important;
+    color: var(--white) !important;
+}
+
+.featured-mini {
+    background: var(--accent-teal-light) !important;
+    color: var(--primary-blue-dark) !important;
+}
+
+/* Email labels */
+.email-label {
+    color: #303F9F !important;
+}
+
+/* Additional overrides for any elements that might still have pink */
+[class*="pink"] {
+    color: #303F9F !important;
+    background-color: #3F51B5 !important;
+    border-color: #1A237E !important;
+}
