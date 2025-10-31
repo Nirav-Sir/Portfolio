@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/whatsapp-button.css">
     <link rel="stylesheet" href="css/visitor-counter.css">
     <link rel="stylesheet" href="css/fix-scrollbar.css">
+    <link rel="stylesheet" href="css/email-layout.css">
     <link rel="stylesheet" href="css/blue-override.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -161,7 +162,8 @@
                     </div>
 
                     <div class="contact-grid">
-                        <div class="contact-card">
+                        <!-- Phone number centered at top -->
+                        <div class="contact-card phone-card" style="grid-column: 1 / -1; max-width: 300px; margin: 0 auto;">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
@@ -169,22 +171,29 @@
                                 Contact No.: 09067262552
                             </div>
                         </div>
-                        <div class="contact-card email-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <span class="email-label">Personal:</span>
-                                <span class="email-address">mr.niravmehta1@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="contact-card email-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope-open-text"></i>
-                            </div>
-                            <div class="contact-text">
-                                <span class="email-label">University:</span>
-                                <span class="email-address">nirav.mehta40015@paruluniversity.ac.in</span>
+                        
+                        <!-- Both emails on the same line -->
+                        <div class="contact-card email-card combined-emails">
+                            <div class="email-container">
+                                <div class="email-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="email-label">Personal:</span>
+                                        <span class="email-address">mr.niravmehta1@gmail.com</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="email-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="email-label">University:</span>
+                                        <span class="email-address">nirav.mehta40015@paruluniversity.ac.in</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
